@@ -9,7 +9,7 @@ export default function Home() {
           Tailwind Css || JIT
         </span>
       </p>
-      <p className="text-5xl text-blue-500 font-semibold text-center w-[60rem]">
+      <p className="text-5xl text-blue-500 font-semibold text-center w-[30rem]">
         Dakshya Nepal Project Re-structured ! Let's get Started 😉
       </p>
     </div>

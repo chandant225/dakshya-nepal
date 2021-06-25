@@ -13,6 +13,13 @@ module.exports = {
           "2xl": "6rem",
         },
       },
+      fontFamily: {
+        primary: ["Roboto", "sans-serif"],
+        secondary: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        primary: "#FACD2E",
+      },
     },
   },
   variants: {
