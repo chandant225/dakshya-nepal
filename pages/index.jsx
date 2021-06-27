@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { HomeLanding, GoalInfo } from "../sections";
+import { HomeLanding, GoalInfo, ProductList } from "../sections";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       </Head>
       <HomeLanding />
       <GoalInfo />
+      <ProductList />
     </>
   );
 }
