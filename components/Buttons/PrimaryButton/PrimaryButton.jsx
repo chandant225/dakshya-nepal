@@ -6,13 +6,13 @@ const PrimaryButton = ({ text, link }) => {
     <>
       {!link ? (
         <button
-          className="inline-block py-3 px-5 text-center bg-black text-white font-semibold text-base rounded-full shadow border-none hover:border-4 border-black hover:text-black hover:bg-white transition-all ease-linear duration-500"
+          className="inline-block py-3 px-5 text-center bg-black text-white font-semibold text-base rounded-full shadow border-none hover:border-4 border-black hover:text-black hover:bg-gray-50 transition-all ease-linear duration-500"
           type="submit"
         >
           {text}
         </button>
       ) : (
-        <div className="inline-block py-3 px-5 text-center bg-black text-white font-semibold text-base rounded-full shadow border-none hover:border-4 border-black hover:text-black hover:bg-white transition-all ease-linear duration-500">
+        <div className="inline-block py-3 px-5 text-center bg-black text-white font-semibold text-base rounded-full shadow border-none hover:border-4 border-black hover:text-black hover:bg-gray-50 transition-all ease-linear duration-500">
           <Link href={link}>{text}</Link>
         </div>
       )}
