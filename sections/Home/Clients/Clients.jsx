@@ -18,7 +18,7 @@ const Clients = () => {
     infinite: true,
   };
   return (
-    <div className="container mx-auto mt-24">
+    <div className="mt-24">
       <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
         Clientele
       </p>

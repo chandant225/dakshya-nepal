@@ -6,3 +6,4 @@ export { default as Blogs } from "./Blogs";
 export { default as CareerBox } from "./CareerBox";
 export { default as Clients } from "./Clients";
 export { default as Testimonials } from "./Testimonials";
+export { default as Subscribe } from "./Subscribe";

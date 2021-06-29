@@ -8,6 +8,7 @@ import {
   CareerBox,
   Clients,
   Testimonials,
+  Subscribe,
 } from "../sections";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <CareerBox />
       <Clients />
       <Testimonials />
+      <Subscribe />
     </>
   );
 }
