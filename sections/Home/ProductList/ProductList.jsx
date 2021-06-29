@@ -24,7 +24,7 @@ const dummy = [
 const ProductList = () => {
   return (
     <div className="bg-[#FEF6E0] bg-opacity-30 relative">
-      <div className="flex justify-center items-center flex-col mt-20 pt-10 container mx-auto">
+      <div className="flex justify-center items-center flex-col mt-20 py-10 container mx-auto">
         <ProductNav items={dummy} />
         <div className="pt-10 flex w-full space-x-32" style={{}}>
           <div className="flex justify-center items-center w-40">

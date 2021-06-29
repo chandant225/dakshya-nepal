@@ -7,7 +7,7 @@ import studyLaptopImg from "../../../public/illustrator/study_laptop.png";
 
 const Features = () => {
   return (
-    <div className="mt-24 container mx-auto flex flex-col items-center justify-center">
+    <div className="mt-20 container mx-auto flex flex-col items-center justify-center">
       <p className="font-primary capitalize text-center text-[32px] w-[494px] font-semibold">
         Making Your Learning Process More interactive and fun
       </p>
