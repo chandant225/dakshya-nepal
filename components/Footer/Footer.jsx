@@ -112,9 +112,30 @@ const Footer = () => {
         </div>
         <div className="space-y-5">
           <p className="font-primary text-xl font-normal capitalize text-white">
-            Products
+            Contact
           </p>
-          <p>Map here</p>
+          <div class="iframe-rwd">
+            <iframe
+              title="map"
+              width="350"
+              height="100"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              className="rounded shadow transform transition-all ease-in-out duration-300 hover:-translate-y-2 -translate-x-5 md:-translate-x-0 lg:-translate-x-0 hover:shadow-lg"
+              src="https://maps.google.com/maps?q=dakshyaNepal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            ></iframe>
+            <br />
+            <small>
+              <a
+                href="https://maps.google.com/maps?q=dakshyaNepal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                className="text-gray-600 hover:text-gray-900 font-primary"
+              >
+                View Larger Map
+              </a>
+            </small>
+          </div>
           <div className="flex space-x-5 items-center">
             <PhoneIcon className="w-6 h-6 text-white" />
             <a
