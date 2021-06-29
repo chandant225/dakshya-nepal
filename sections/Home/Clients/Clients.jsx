@@ -20,7 +20,7 @@ const Clients = () => {
   return (
     <div className="container mx-auto mt-24">
       <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
-        Our Happy Customers
+        Clientele
       </p>
       <div className="pt-10">
         <Slider {...settings}>

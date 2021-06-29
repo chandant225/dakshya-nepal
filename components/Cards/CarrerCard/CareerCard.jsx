@@ -19,12 +19,12 @@ const CareerCard = ({ description, links, image }) => {
         </div>
         <p className="font-primary text-base text-gray-600">{description}</p>
         <div className="flex space-x-3 my-[26px]">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <>
               {link.active ? (
-                <PrimaryButton text={link.name} link={link.url} />
+                <PrimaryButton text={link.name} link={link.url} key={index} />
               ) : (
-                <SecondaryButton text={link.name} link={link.url} />
+                <SecondaryButton text={link.name} link={link.url} key={index} />
               )}
             </>
           ))}

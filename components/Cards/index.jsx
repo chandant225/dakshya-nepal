@@ -2,3 +2,4 @@ export { default as PrimaryCard } from "./PrimaryCard";
 export { default as InfoCard } from "./InfoCard";
 export { default as FeatureCard } from "./FeatureCard";
 export { default as CareerCard } from "./CarrerCard";
+export { default as TestimonialCard } from "./TestimonialCard";

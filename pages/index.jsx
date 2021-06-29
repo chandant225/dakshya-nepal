@@ -7,6 +7,7 @@ import {
   Blogs,
   CareerBox,
   Clients,
+  Testimonials,
 } from "../sections";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Blogs />
       <CareerBox />
       <Clients />
+      <Testimonials />
     </>
   );
 }
