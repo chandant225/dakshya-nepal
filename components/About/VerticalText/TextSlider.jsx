@@ -22,7 +22,7 @@ const TextSlider =  ({ TextList }) => {
   return (
     <Slider {...settings}>
       {TextList.map((data, index) => (
-        <h2 key={index}>{data}</h2>
+        <h2 key={index} className="text-left">{data}</h2>
       ))}
     </Slider>
   )
