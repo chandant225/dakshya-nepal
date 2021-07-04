@@ -1,0 +1,22 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="48" width="300" height="165" rx="10" fill="black"/>
+<rect x="98" y="237" width="104" height="16" rx="4" fill="black"/>
+<rect x="144" y="213" width="12" height="32" fill="black"/>
+<g clip-path="url(#clip0)">
+<rect x="8" y="56" width="284" height="149" rx="10" fill="white"/>
+<path d="M45.5 125.5V84.5H254.5V125.5H45.5Z" fill="#FFD749" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M45.5 243.5V124.5H254.5V243.5H45.5Z" fill="white" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 156.5V152.5H138.5V156.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 198.5V194.5H138.5V198.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 184.5V180.5H138.5V184.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 170.5V166.5H138.5V170.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<rect x="151" y="208" width="71" height="91" transform="rotate(-90 151 208)" fill="#FFD749" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 142.5V138.5H108.5V142.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M225.366 157.63L225.248 157.71C222.99 159.236 222.386 162.44 224.054 164.908L226.365 168.327C226.825 169.009 226.646 169.935 225.965 170.396C225.283 170.857 224.357 170.677 223.896 169.996L219.629 163.681C217.961 161.214 214.813 160.417 212.555 161.943C210.285 163.477 209.85 166.695 211.518 169.162L216.041 175.855C216.501 176.537 216.322 177.463 215.64 177.924C214.959 178.385 214.033 178.206 213.572 177.524L207.807 168.993C206.14 166.527 202.961 165.837 200.703 167.363L200.578 167.447C198.376 168.935 197.785 172.027 199.394 174.408L205.886 184.014C206.346 184.695 206.167 185.622 205.485 186.082C204.804 186.543 203.878 186.364 203.417 185.682L197.113 176.354C197.093 176.324 197.068 176.295 197.047 176.264C196.996 176.188 196.948 176.11 196.897 176.035L182.16 154.227C180.492 151.76 177.275 151.012 175.017 152.537C172.76 154.063 172.254 157.327 173.918 159.793L198.333 195.973C198.684 196.495 198.671 197.181 198.299 197.688C197.927 198.195 197.276 198.414 196.674 198.235L188.803 195.897C186.701 195.24 184.42 195.487 182.506 196.579C180.644 197.666 179.318 199.477 178.845 201.58C178.839 201.604 178.834 201.631 178.827 201.656L178.459 202.934L212.873 221.586C218.305 224.53 224.695 224.353 229.524 221.09L246.83 209.395C254.194 204.418 255.813 193.885 250.457 185.943C247.62 181.738 245.494 178.582 243.781 176.04C239.202 169.246 237.518 166.747 232.447 159.281C230.778 156.824 227.619 156.108 225.366 157.63Z" fill="white" stroke="black" stroke-width="3" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect x="8" y="56" width="284" height="149" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

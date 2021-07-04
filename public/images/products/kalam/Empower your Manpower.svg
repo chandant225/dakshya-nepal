@@ -1,0 +1,22 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="48" width="300" height="165" rx="10" fill="black"/>
+<rect x="98" y="237" width="104" height="16" rx="4" fill="black"/>
+<g clip-path="url(#clip0)">
+<rect x="8" y="56" width="284" height="149" rx="10" fill="white"/>
+<path d="M45.5 125.5V84.5H254.5V125.5H45.5Z" fill="#FFD749" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M45.5 243.5V124.5H254.5V243.5H45.5Z" fill="white" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 156.5V152.5H138.5V156.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 198.5V194.5H138.5V198.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 184.5V180.5H138.5V184.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 170.5V166.5H138.5V170.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<rect x="151" y="208" width="71" height="91" transform="rotate(-90 151 208)" fill="#FFD749" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M59.5 142.5V138.5H108.5V142.5H59.5Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M182.661 157.872C183.639 156.727 183.596 157.959 184.361 159.29L188.395 166.277C188.986 167.301 192.27 166.587 193.293 165.996C194.345 165.388 196.594 162.947 195.986 161.895L191.952 154.908C191.193 153.593 190.076 153.003 191.574 152.726C197.996 151.531 204.501 154.529 207.765 160.188C210.764 165.379 210.457 171.819 207.103 176.679L224.55 206.896C230.432 206.42 236.164 209.374 239.162 214.568C242.429 220.225 241.772 227.36 237.529 232.321C236.538 233.482 236.585 232.213 235.829 230.902L231.795 223.915C231.184 222.865 227.947 223.589 226.896 224.199C225.845 224.802 223.593 227.234 224.204 228.298L228.238 235.285C228.996 236.599 230.113 237.19 228.616 237.467C226.31 237.896 223.992 237.784 221.816 237.201C217.939 236.162 214.517 233.629 212.427 230.005C209.426 224.813 209.735 218.375 213.089 213.514L195.642 183.298C189.763 183.771 184.028 180.819 181.027 175.625C177.761 169.967 178.418 162.833 182.661 157.872Z" fill="white" stroke="black" stroke-width="3" stroke-linecap="round"/>
+</g>
+<rect x="144" y="207" width="12" height="32" fill="black"/>
+<defs>
+<clipPath id="clip0">
+<rect x="8" y="56" width="284" height="149" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>
