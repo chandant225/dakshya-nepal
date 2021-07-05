@@ -1,0 +1,17 @@
+export default [
+  "Effortless learning",
+  "Learning beyond walls",
+  "The new normal schooling",
+  "Interactive sessions",
+  "Simplified learning",
+  "Comprehensive access",
+  "Largest digital educator",
+  "The reform in education",
+  "Self reflection opportunities",
+  "Language tailored for students",
+  "Build people to build Nepal",
+  "Personalization as per your needs",
+  "Realtime assessment",
+  "Responsive to Individual needs",
+  "Multi-sensory interaction",
+];

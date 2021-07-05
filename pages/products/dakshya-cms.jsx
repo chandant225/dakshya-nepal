@@ -2,19 +2,19 @@ import React from "react";
 import Accordion from "../../components/Accordion/Accordion";
 import FeaturesData from "./cmsFeatures.json";
 import ContactSalesForm from "../../components/ContactSalesForm/ContactSalesForm";
-import Link from 'next/link';
+import Link from "next/link";
 
 const DakshyaCms = () => {
   return (
-    <div className="lg:px-28 px-4">
-      <div className="shadow-sm flex flex-row relative justify-between">
+    <div className="container mx-auto">
+      <div className=" flex flex-row relative justify-between">
         <Accordion title={"Dakshya-CMS"} />
         <Link href="#contactsalesform">
-        <a>
-        <button className="text-white absolute right-0 px-3 py-2 bg-black w-[10rem] h-[3rem] rounded-full font-medium mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white mr-2">
-          Contact Sales
-        </button>
-        </a>
+          <a>
+            <button className="text-white absolute right-0 px-3 py-2 bg-black w-[10rem] h-[3rem] rounded-full font-medium mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white mr-2">
+              Contact Sales
+            </button>
+          </a>
         </Link>
       </div>
       <div className="mt-12">
@@ -106,9 +106,12 @@ const DakshyaCms = () => {
           </div>
         </div>
       </div>
-      <div id="contactsalesform" className="mt-8 border-2 rounded-xl lg:p-8 px-2">
+      <div
+        id="contactsalesform"
+        className="mt-8 border-2 rounded-xl lg:p-8 px-2"
+      >
         <h1 className="text-4xl font-medium py-3">Contact Sales Form</h1>
-           <ContactSalesForm />
+        <ContactSalesForm />
       </div>
     </div>
   );

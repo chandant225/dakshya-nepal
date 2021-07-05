@@ -5,7 +5,7 @@ import ContactSalesForm from "../../components/ContactSalesForm/ContactSalesForm
 
 const Qbex = () => {
   return (
-    <div className="lg:px-28 px-4">
+    <div className="container mx-auto">
       <div className="shadow-sm flex relative flex-row justify-between">
         <Accordion title={"Qbex"} />
         <button className="text-white absolute right-0 px-2 py-2 bg-black lg:w-[10rem] w-[10rem] h-[3rem] rounded-full font-medium mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white mr-4">
@@ -87,18 +87,14 @@ const Qbex = () => {
                     alt={data.title}
                   />
                   <div className="lg:w-[60%] w-full">
-                    <h1 className="text-2xl font-medium py-2">
-                      {data.title}
-                    </h1>
+                    <h1 className="text-2xl font-medium py-2">{data.title}</h1>
                     <p className="text-gray-500">{data.description}</p>
                   </div>
                 </div>
               ) : (
                 <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center justify-center">
                   <div className="lg:w-[60%] w-full">
-                    <h1 className="text-2xl font-medium py-2">
-                      {data.title}
-                    </h1>
+                    <h1 className="text-2xl font-medium py-2">{data.title}</h1>
                     <p className="text-gray-500">{data.description}</p>
                   </div>
                   <img
@@ -112,10 +108,9 @@ const Qbex = () => {
           ))}
       </div>
       <div className="border-2 p-4 rounded-xl">
-      <h1 className="text-4xl font-medium py-4">Contact Sales Form</h1>
-      <ContactSalesForm />
+        <h1 className="text-4xl font-medium py-4">Contact Sales Form</h1>
+        <ContactSalesForm />
       </div>
-    
     </div>
   );
 };

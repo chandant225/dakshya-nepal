@@ -3,28 +3,28 @@
     "name": "Smart School",
     "price": 200,
     "link": "/products/smart-school",
-    "image": "/images/products/Girl_on_a_chair.png",
-    "animate":"fade-up"
+    "image": "/illustrations/Girl on a chair.svg",
+    "animate": "fade-up"
   },
   {
     "name": "Guidance Counseling",
     "price": 200,
     "link": "/products/guidance-counseling",
-    "image": "/images/products/Guidance_Counselling.png",
-    "animate":"fade-left"
+    "image": "/illustrations/Guidance Counseling.svg",
+    "animate": "fade-left"
   },
   {
     "name": "Dakshya CMS",
     "price": 200,
     "link": "/products/dakshya-cms",
-    "image": "/images/products/CMS.png",
-    "animate":"fade-right"
+    "image": "/illustrations/CMS.svg",
+    "animate": "fade-right"
   },
   {
     "name": "Qbex",
     "price": 200,
     "link": "/products/qbex",
-    "image": "/images/products/Qubex.png",
-    "animate":"fade-up"
+    "image": "/illustrations/Qubex.svg",
+    "animate": "fade-up"
   }
 ]

@@ -2,22 +2,22 @@ import React, { useEffect } from "react";
 import Accordion from "../../components/Accordion/Accordion";
 import Link from "next/link";
 import CounselingForm from "../../components/CounselingForm/CounselingForm";
-import Aos from 'aos';
+import Aos from "aos";
 
 const GuidanceCounseling = () => {
   useEffect(() => {
     Aos.init({
-      duration:1000
-    })
-  })
+      duration: 1000,
+    });
+  });
   return (
-    <div className="lg:px-28 px-4">
+    <div className="container mx-auto">
       <div className="shadow-sm flex flex-row relative justify-between">
         <Accordion title={"Guidance-Counseling"} />
         <Link href="#councelingForm">
           <a>
             <button className="text-white px-3 py-2 absolute right-0 bg-black lg:w-[10rem] w-[10rem] h-[3rem] rounded-full font-medium lg:mt-6 mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white lg:mr-4 mr-1">
-             Book Session
+              Book Session
             </button>
           </a>
         </Link>
@@ -47,7 +47,7 @@ const GuidanceCounseling = () => {
             </p>
           </div>
           <img
-          data-aos="fade-up"
+            data-aos="fade-up"
             className="lg:w-[40%] w-full"
             src="/images/products/counceling/1.svg"
             alt="Coping With Academic And Personal Struggles"
@@ -55,7 +55,7 @@ const GuidanceCounseling = () => {
         </div>
         <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center">
           <img
-          data-aos="flip-left"
+            data-aos="flip-left"
             className="lg:w-[40%] w-full"
             src="/images/products/counceling/2.svg"
             alt="Minimizing Gap In Parent-Child Relationship"
@@ -84,7 +84,7 @@ const GuidanceCounseling = () => {
             </p>
           </div>
           <img
-          data-aos="zoom-in"
+            data-aos="zoom-in"
             className="lg:w-[40%] w-full"
             src="/images/products/counceling/3.svg"
             alt="Reliable Support System For Students"
@@ -92,7 +92,7 @@ const GuidanceCounseling = () => {
         </div>
         <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center">
           <img
-          data-aos="fade-up"
+            data-aos="fade-up"
             className="lg:w-[40%] w-full"
             src="/images/products/counceling/4.svg"
             alt="Facilitated Mediator For Parents"
@@ -158,7 +158,6 @@ const GuidanceCounseling = () => {
           </div>
           <div>
             <img
-           
               className="object-cover w-[35rem]  h-[16rem]"
               src="/images/products/Girl_on_a_chair.png"
               alt="Girl_on_a_chair"
@@ -169,7 +168,7 @@ const GuidanceCounseling = () => {
       <div className="mt-8">
         <div className="flex lg:flex-row flex-col gap-8">
           <img
-           data-aos="zoom-in"
+            data-aos="zoom-in"
             className="object-cover lg:w-[50%] w-full"
             src="/images/products/Online_classes.png"
             alt="Online_classes"
@@ -196,7 +195,7 @@ const GuidanceCounseling = () => {
           Lets Start Learning With Guidance Counseling Sessions
         </h1>
         <div className="border-2 p-4 rounded-xl">
-             <CounselingForm />
+          <CounselingForm />
         </div>
       </div>
     </div>
