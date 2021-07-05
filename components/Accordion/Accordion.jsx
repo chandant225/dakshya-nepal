@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import ProductsData from "../../pages/products/products.json";
 import Link from "next/link";
+import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
 
 const Accordion = (props) => {
   const [Active, setActive] = useState("");
@@ -20,7 +21,10 @@ const Accordion = (props) => {
     }
   }
   return (
-    <div className="px-3 lg:ml-0 -ml-4 lg:mt-0 mt-6">
+    <div
+      className="w-full lg:shadow-md"
+      // style={{ boxShadow: "0px 2px 15px rgba(0, 0, 0, 0.03)" }}
+    >
       <div onClick={toggleAccordion} className="flex flex-row items-center">
         <button
           className={`rounded-full lg:mb-8 lg:mt-6 px-4 py-2  font-medium focus:outline-none ${Active}`}
@@ -43,21 +47,19 @@ const Accordion = (props) => {
         className="overflow-hidden"
         style={{ maxHeight: `${Height}`, transition: "max-height 0.6s ease" }}
       >
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-x-4 gap-y-8 pt-4 pb-4">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-x-4 gap-y-8 pt-4 pb-4 lg:pl-6">
           {ProductsData.map((product, index) => (
-            <Link  key={index} href={product.link}>
+            <Link key={index} href={product.link}>
               <a>
-                <div
-                  className="flex flex-row transition-transform duration-300 ease-in-out transform hover:-translate-y-3 gap-4 items-center hover:shadow-lg shadow-md rounded-2xl overflow-hidden lg:w-[20rem] w-[25rem]"
-                >
+                <div className="flex flex-row justify-around transition-transform duration-300 ease-in-out transform hover:-translate-y-3 gap-4 items-center hover:shadow-lg border-2 overflow-hidden lg:w-[25rem] w-full">
                   <img
-                    className="w-[100px] h-[100px] object-cover"
+                    className="w-[100px] h-[100px] object-contain"
                     src={product.image}
                     alt={product.name}
                   />
                   <p className="text-lg font-medium">{product.name}</p>
                   <span>
-                    <p>arrow</p>
+                    <ArrowNarrowRightIcon className="w-6 h-6 text-gray-900" />
                   </span>
                 </div>
               </a>
