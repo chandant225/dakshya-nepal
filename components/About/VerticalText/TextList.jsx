@@ -1,4 +1,4 @@
-export default  [
+export default [
   "Effortless learning",
   "Learning beyond walls",
   "The new normal schooling",
@@ -14,4 +14,4 @@ export default  [
   "Realtime assessment",
   "Responsive to Individual needs",
   "Multi-sensory interaction",
-]
+];
