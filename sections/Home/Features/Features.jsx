@@ -8,15 +8,16 @@ import studyLaptopImg from "../../../public/illustrator/study_laptop.png";
 const Features = () => {
   return (
     <div
-      className="mt-20 container mx-auto grid items-center justify-center gap-5"
+      className="mt-20 container mx-auto grid gap-5"
       style={{ gridTemplateColumns: ".4fr 1fr" }}
     >
-      <div className="space-y-3">
-        <div className="flex items-center shadow-lg justify-center w-20 h-20 rounded-tr-full rounded-tl-full rounded-br-3xl rounded-bl-full bg-gradient-to-tr from-blue-300 to-purple-500">
+      <div className="space-y-3 mt-10">
+        <div className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-blue-300 to-purple-500">
+          <div className="absolute w-6 h-6 bg-gradient-to-br from-blue-300 to-purple-500 rounded-full -top-4 -right-4" />
           <CursorClickIcon className="w-8 h-8 text-white" />
         </div>
         <p className="font-primary font-medium text-lg text-purple-500">
-          Features
+          Smart School
         </p>
         <p className="font-primary capitalize text-left text-[32px] md:w-[420px] font-semibold">
           Making Your Learning Process More interactive and fun
@@ -28,23 +29,18 @@ const Features = () => {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-5">
-        <div className="transform translate-y-14 space-y-10">
+        <div className="transform translate-y-0 space-y-10 place-self-center">
           <FeatureCard
             title="Exam Quiz Software"
             description="Extensive quiz software for students which consists of question banks with over 1lac questions"
             image={quizImg}
           />
+        </div>
+        <div className="space-y-10">
           <FeatureCard
             title="Interactive Application"
             description="Extensive quiz software for students which consists of question banks with over 1lac questions"
             image={interactiveImg}
-          />
-        </div>
-        <div className="space-y-10">
-          <FeatureCard
-            title="High Defination 3D/2D Content"
-            description="Extensive quiz software for students which consists of question banks with over 1lac questions"
-            image={studyLaptopImg}
           />
           <FeatureCard
             title="High Defination 3D/2D Content"

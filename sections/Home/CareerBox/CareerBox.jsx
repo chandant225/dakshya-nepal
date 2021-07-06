@@ -22,10 +22,23 @@ const CareerBox = () => {
   ];
   return (
     <div className="container mx-auto mt-24 flex flex-col items-center justify-center">
-      <div className="flex items-center shadow-lg justify-center w-20 h-20 rounded-tr-full rounded-tl-full rounded-br-3xl rounded-bl-full bg-gradient-to-tr from-pink-500 to-red-500">
+      <div
+        className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full rounded-bl-full bg-gradient-to-tr from-pink-500 to-red-500"
+        style={{
+          backgroundImage:
+            "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+        }}
+      >
+        <div
+          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -left-4"
+          style={{
+            backgroundImage:
+              "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+          }}
+        />
         <BriefcaseIcon className="w-8 h-8 text-white" />
       </div>
-      <p className="font-primary text-lg font-medium pt-5 text-red-500">
+      <p className="font-primary text-lg font-medium pt-5 text-gray-800">
         Career
       </p>
       <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
