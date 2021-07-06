@@ -4,6 +4,7 @@ import VideoData from "./videoData.json";
 import ContactSalesForm from "../../components/ContactSalesForm/ContactSalesForm";
 import Link from "next/link";
 import Aos from "aos";
+import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
 
 const SmartSchool = () => {
   const [classvideos, setclassvideos] = useState("");
@@ -23,17 +24,15 @@ const SmartSchool = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-row justify-evenly relative py-10">
+      <div className="flex flex-row justify-evenly relative py-8 lg:shadow-none shadow-md">
         <Accordion title={"Smart School"} />
         <Link href="#contactsales">
-          <a>
-            <button className="text-white px-3 py-2 bg-black lg:w-[10rem] w-[10rem]  h-[3rem] rounded-full font-medium lg:mt-4 -mt-2 absolute right-0  hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white lg:mr-4">
-              Contact Sales
-            </button>
+          <a className="absolute lg:top-14 lg:right-6 top-6 right-2">
+            <SecondaryButton text={"Contact sales"} />
           </a>
         </Link>
       </div>
-      <div className="lg:py-8 mt-12">
+      <div className="lg:py-2 mt-8 lg:mt-0">
         <h1 className="text-4xl font-medium">
           Smarter Way To Study With SmartSchool<br></br>
           Study'n'Learn
@@ -50,13 +49,16 @@ const SmartSchool = () => {
       <div>
         <h1 className="text-4xl font-medium">Why SmartSchool ?</h1>
       </div>
-      <div className="flex lg:flex-row flex-col gap-8 py-10 items-center align-middle justify-center">
-        <img
-          data-aos="fade-up"
-          className=" lg:w-2/5 w-full h-80 object-cover"
-          src="/images/products/smart-school/HD Animated Videos.svg"
-          alt="HD Animated Videos"
-        />
+      <div className="flex lg:flex-row flex-col lg:gap-8 py-10 items-center align-middle justify-center">
+        <div className="bg-[#FEF6E0] lg:w-2/5 w-full">
+          <img
+            data-aos="fade-up"
+            className="w-full h-80 object-contain"
+            src="/images/products/smart-school/HD Animated Videos.svg"
+            alt="HD Animated Videos"
+          />
+        </div>
+
         <div data-aos="fade-up" className="lg:w-3/5 w-full ">
           <p className="text-2xl font-medium py-2">HD Animated Videos</p>
           <p className="text-gray-500">
@@ -80,20 +82,25 @@ const SmartSchool = () => {
             the revision time relaxing for the child.
           </p>
         </div>
-        <img
-          data-aos="zoom-in-up"
-          className="lg:w-2/5 w-full h-80 object-cover"
-          src="/images/products/smart-school/Interactive Tools.svg"
-          alt="HD Animated Videos"
-        />
+        <div className="bg-[#FEF6E0] lg:w-2/5 w-full">
+          <img
+            data-aos="zoom-in-up"
+            className="w-full h-80 object-contain"
+            src="/images/products/smart-school/Interactive Tools.svg"
+            alt="HD Animated Videos"
+          />
+        </div>
       </div>
       <div className="flex lg:flex-row flex-col gap-8 py-10 items-center align-middle justify-center">
-        <img
-          data-aos="flip-right"
-          className=" lg:w-2/5 w-full h-80 object-cover"
-          src="/images/products/smart-school/Huge Question Bank.svg"
-          alt="HD Animated Videos"
-        />
+        <div className="bg-[#FEF6E0] lg:w-2/5 w-full">
+          <img
+            data-aos="flip-right"
+            className="w-full h-80 object-contain"
+            src="/images/products/smart-school/Huge Question Bank.svg"
+            alt="HD Animated Videos"
+          />
+        </div>
+
         <div data-aos="flip-left" className="lg:w-3/5 w-full ">
           <p className="text-2xl font-medium py-2">Huge Question Bank</p>
           <p className="text-gray-500">
@@ -143,10 +150,10 @@ const SmartSchool = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="bg-[#FEF6E0] pt-6">
             <img
-              className="object-cover w-[35rem] h-[16rem]"
-              src="/images/products/Girl_on_a_chair.png"
+              className="object-contain w-[35rem] h-[16rem]"
+              src="/illustrations/Girl on a chair.svg"
               alt="Girl_on_a_chair"
             />
           </div>
@@ -161,7 +168,7 @@ const SmartSchool = () => {
                 key={index}
                 className={
                   activeclass == index
-                    ? "bg-black py-2 px-3 focus:outline-none text-lg rounded-xl text-gray-50"
+                    ? "bg-[#FEF6E0] font-medium py-2 px-3 focus:outline-none text-lg rounded-xl text-black"
                     : "text-lg font-medium py-2 px-3  text-gray-600"
                 }
                 onClick={() => ClassVideoSection(index)}

@@ -21,22 +21,20 @@ const Accordion = (props) => {
     }
   }
   return (
-    <div
-      className="w-full lg:shadow-md"
-    >
+    <div className="w-full lg:shadow-md">
       <div onClick={toggleAccordion} className="flex flex-row items-center">
         <button
-          className={`rounded-full lg:mb-8 lg:mt-6 px-4 py-2  font-medium focus:outline-none ${Active}`}
+          className={`rounded-full text-lg lg:ml-0 -ml-2 lg:mb-8 lg:mt-6 px-4 py-2 font-medium focus:outline-none ${Active}`}
         >
           {props.title}
         </button>
         <img
           className={
             Rotate
-              ? "w-5 h-5 -mt-1 -ml-2 object-cover transform rotate-180"
-              : "w-5 h-5 object-cover -ml-2 -mt-1"
+              ? "w-4 h-3 -mt-1 -ml-2 object-contain transform rotate-180"
+              : "w-4 h-3 object-contain -ml-2 -mt-1"
           }
-          src="/chevron.png"
+          src="/icons/down.svg"
           alt="chevron"
         />
       </div>
@@ -50,7 +48,7 @@ const Accordion = (props) => {
           {ProductsData.map((product, index) => (
             <Link key={index} href={product.link}>
               <a>
-                <div className="flex flex-row justify-around transition-transform duration-300 ease-in-out transform hover:-translate-y-3 gap-4 items-center hover:shadow-lg border-2 overflow-hidden lg:w-[25rem] w-full">
+                <div className="flex flex-row justify-around transition-transform duration-300 ease-in-out transform hover:-translate-y-3 gap-4 items-center hover:shadow-lg border-2 overflow-hidden lg:w-[20rem] w-full">
                   <img
                     className="w-[100px] h-[100px] object-contain"
                     src={product.image}

@@ -20,7 +20,7 @@ export default function Products() {
             link={product.link}
             pricing={product.price}
             image={product.image}
-          />s
+          />
         ))}
       </div>
       <div data-aos-duration="1000" data-aos="zoom-in">

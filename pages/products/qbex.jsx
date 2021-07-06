@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Accordion from "../../components/Accordion/Accordion";
 import QbexData from "./qbex.json";
 import ContactSalesForm from "../../components/ContactSalesForm/ContactSalesForm";
+import Aos from "aos";
+import Link from "next/link";
+import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
 
 const Qbex = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="container mx-auto">
-      <div className="shadow-sm flex relative flex-row justify-between">
+      <div className="shadow-sm lg:shadow-none flex relative flex-row justify-between py-8">
         <Accordion title={"Qbex"} />
-        <button className="text-white absolute right-0 px-2 py-2 bg-black lg:w-[10rem] w-[10rem] h-[3rem] rounded-full font-medium mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white mr-4">
-          Contact Sales
-        </button>
+        <Link href="#contactsales">
+          <a className="absolute lg:top-12 lg:right-6 top-6 right-2 ">
+            <SecondaryButton text={"Contact sales"} />
+          </a>
+        </Link>
       </div>
       <div>
         <h1 className="text-4xl font-medium py-8">
@@ -21,7 +31,7 @@ const Qbex = () => {
           can be customized to cater to every users’ needs, a powerful and easy
           to use system accessible at any time from anywhere.
         </p>
-        <div className="flex lg:flex-row flex-col my-12 gap-4">
+        <div className="flex lg:flex-row flex-col mt-10 lg:gap-4 gap-12">
           <div className="flex-1 text-center shadow-xl p-3 rounded-xl duration-700 ease-in-out transition-transform hover:transform hover:-translate-y-4">
             <div className="border-2 p-4 rounded-full w-[30%] m-auto">
               <img
@@ -74,40 +84,51 @@ const Qbex = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="lg:mt-10 mt-8">
         <h1 className="text-4xl font-medium">Modules</h1>
         {QbexData &&
           QbexData.map((data, index) => (
             <>
               {data.left == true ? (
-                <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center">
-                  <img
-                    className="lg:w-[40%] w-full"
-                    src={data.image_url}
-                    alt={data.title}
-                  />
+                <div
+                  data-aos="fade-up"
+                  className="flex lg:flex-row flex-col lg:gap-12 gap-4 lg:mt-8 mt-6 items-center justify-center"
+                >
+                  <div className="bg-[#FEF6E0] lg:w-[40%] p-6 ">
+                    <img
+                      className="w-full object-contain"
+                      src={data.image_url}
+                      alt={data.title}
+                    />
+                  </div>
+
                   <div className="lg:w-[60%] w-full">
                     <h1 className="text-2xl font-medium py-2">{data.title}</h1>
                     <p className="text-gray-500">{data.description}</p>
                   </div>
                 </div>
               ) : (
-                <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center justify-center">
+                <div
+                  data-aos="fade-up"
+                  className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 lg:mt-8 mt-6 items-center justify-center"
+                >
                   <div className="lg:w-[60%] w-full">
                     <h1 className="text-2xl font-medium py-2">{data.title}</h1>
                     <p className="text-gray-500">{data.description}</p>
                   </div>
-                  <img
-                    className="lg:w-[40%] w-full"
-                    src={data.image_url}
-                    alt={data.title}
-                  />
+                  <div className="bg-[#FEF6E0] lg:w-[40%] p-6">
+                    <img
+                      className="w-full object-contain"
+                      src={data.image_url}
+                      alt={data.title}
+                    />
+                  </div>
                 </div>
               )}
             </>
           ))}
       </div>
-      <div className="border-2 p-4 rounded-xl">
+      <div id="contactsales" className="border-2 p-4 mt-12 rounded-xl">
         <h1 className="text-4xl font-medium py-4">Contact Sales Form</h1>
         <ContactSalesForm />
       </div>
