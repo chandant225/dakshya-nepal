@@ -12,11 +12,23 @@ const Features = () => {
       style={{ gridTemplateColumns: ".4fr 1fr" }}
     >
       <div className="space-y-3 mt-10">
-        <div className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-blue-300 to-purple-500">
-          <div className="absolute w-6 h-6 bg-gradient-to-br from-blue-300 to-purple-500 rounded-full -top-4 -right-4" />
+        <div
+          className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
+          style={{
+            backgroundImage:
+              "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+          }}
+        >
+          <div
+            className="absolute w-6 h-6 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full -top-4 -right-4"
+            style={{
+              backgroundImage:
+                "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+            }}
+          />
           <CursorClickIcon className="w-8 h-8 text-white" />
         </div>
-        <p className="font-primary font-medium text-lg text-purple-500">
+        <p className="font-primary font-medium text-lg text-gray-800">
           Smart School
         </p>
         <p className="font-primary capitalize text-left text-[32px] md:w-[420px] font-semibold">
