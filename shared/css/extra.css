@@ -2,3 +2,15 @@
   display: flex !important;
   justify-content: center !important;
 }
+
+.product__infoCard ul li::before {
+  content: "👉";
+  position: absolute;
+  left: -30px;
+}
+
+.product__infoCard ul {
+  list-style: none !important;
+  position: relative;
+  margin-left: 1.5rem;
+}

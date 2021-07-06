@@ -17,7 +17,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div className="mt-24 bg-black">
-      <div className="container mx-auto grid grid-cols-3  py-10">
+      <div className="container mx-auto grid md:grid-cols-3 py-10">
         <div className="space-y-5">
           <Image src={logo_white} className="" alt="dakshya_logo white" />
           <div className="flex gap-5">
@@ -54,7 +54,7 @@ const Footer = () => {
             All right reserved Dakshya Nepal {date}
           </p>
         </div>
-        <div className="flex space-x-20">
+        <div className="flex space-x-20 mt-5 md:mt-0">
           <div className="space-y-5">
             <p className="font-primary text-xl font-normal capitalize text-white">
               Products
@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-5">
+        <div className="space-y-5 mt-5 md:mt-0">
           <p className="font-primary text-xl font-normal capitalize text-white">
             Contact
           </p>
