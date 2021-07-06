@@ -22,8 +22,21 @@ const Blogs = () => {
   const DisplayBlogs = BlogData.slice(0, itemToshow);
   return (
     <div className="mt-32 container mx-auto flex flex-col items-center">
-      <div className="flex items-center shadow-lg justify-center w-20 h-20 rounded-tr-full rounded-tl-full rounded-br-full rounded-bl-3xl bg-gradient-to-tr from-yellow-300 to-yellow-500">
+      <div
+        className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
+        style={{
+          backgroundImage:
+            "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+        }}
+      >
         <RssIcon className="w-8 h-8 text-white" />
+        <div
+          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
+          style={{
+            backgroundImage:
+              "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+          }}
+        />
       </div>
       <p className="text-lg font-semibold text-center mt-5 text-gray-700">
         Dakshya Blogs

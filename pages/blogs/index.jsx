@@ -47,7 +47,7 @@ export default function BlogsPage() {
               onClick={() => {
                 loadmore();
               }}
-              className="border-4 border-blue-700 rounded-md py-2 px-4 focus:outline-none text-xl text-blue-700 font-bold"
+              className="inline-block py-3 px-5 text-center bg-black text-white font-semibold text-base rounded-full shadow border-none hover:border-4 border-black hover:text-black hover:bg-gray-50 transition-all ease-linear duration-500"
             >
               Load More Blogs
             </button>

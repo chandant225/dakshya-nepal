@@ -20,10 +20,23 @@ const Clients = () => {
   };
   return (
     <div className="mt-24 flex flex-col">
-      <div className="self-center flex items-center shadow-lg justify-center w-20 h-20 rounded-tr-full rounded-tl-full rounded-br-full rounded-bl-3xl bg-gradient-to-tr from-green-300 to-green-500">
+      <div
+        className="relative self-center flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300-300 to-yellow-500"
+        style={{
+          backgroundImage:
+            "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+        }}
+      >
+        <div
+          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
+          style={{
+            backgroundImage:
+              "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+          }}
+        />
         <ShieldCheckIcon className="w-8 h-8 text-white" />
       </div>
-      <p className="text-center font-primary text-green-500 text-lg font-medium pt-5">
+      <p className="text-center font-primary text-gray-800 text-lg font-medium pt-5">
         Clientele
       </p>
       <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
