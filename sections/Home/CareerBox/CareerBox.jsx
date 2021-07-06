@@ -1,4 +1,5 @@
 import React from "react";
+import { BriefcaseIcon } from "@heroicons/react/solid";
 import { CareerCard } from "../../../components";
 
 import carrers_img from "../../../public/illustrator/careers.png";
@@ -20,8 +21,14 @@ const CareerBox = () => {
     },
   ];
   return (
-    <div className="container mx-auto mt-24">
-      <p className="pt-10 text-center font-primary text-[32px] font-medium capitalize text-gray-900">
+    <div className="container mx-auto mt-24 flex flex-col items-center justify-center">
+      <div className="flex items-center shadow-lg justify-center w-20 h-20 rounded-tr-full rounded-tl-full rounded-br-3xl rounded-bl-full bg-gradient-to-tr from-pink-500 to-red-500">
+        <BriefcaseIcon className="w-8 h-8 text-white" />
+      </div>
+      <p className="font-primary text-lg font-medium pt-5 text-red-500">
+        Career
+      </p>
+      <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
         Intrested In Educating Nepal?
       </p>
       <div className="pt-10">

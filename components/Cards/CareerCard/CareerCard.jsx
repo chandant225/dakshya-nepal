@@ -4,7 +4,7 @@ import { PrimaryButton, SecondaryButton } from "../../Buttons";
 
 const CareerCard = ({ description, links, image }) => {
   return (
-    <div className="flex space-x-5 bg-white rounded-md shadow-lg hover:shadow-primary transition-all ease-in-out duration-300">
+    <div className="flex flex-col items-center md:items-start md:flex-row space-x-5 bg-white rounded-md shadow-lg hover:shadow-primary transition-all ease-in-out duration-300">
       <div className="bg-[#FEF6E0] w-[300px]">
         <Image src={image} alt="" className="w-full" />
       </div>
@@ -18,7 +18,7 @@ const CareerCard = ({ description, links, image }) => {
           </p>
         </div>
         <p className="font-primary text-base text-gray-600">{description}</p>
-        <div className="flex space-x-3 my-[26px]">
+        <div className="flex flex-col md:flex-row items-center md:items-start space-y-3 space-x-0 md:space-x-3 md:space-y-0 my-[26px]">
           {links.map((link, index) => (
             <>
               {link.active ? (

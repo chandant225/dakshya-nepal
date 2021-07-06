@@ -15,14 +15,16 @@ const BlogCard = ({ blog }) => {
                 className="object-cover h-48 w-full"
               />
               <div className="flex flex-row justify-between p-3">
-                <p className="bg-blue-700 text-gray-50 p-1 rounded-2xl w-32 text-center">
+                <p className="font-primary bg-blue-700 text-gray-50 p-1 rounded-2xl w-32 text-center">
                   {blog.category}
                 </p>
-                <p className="text-gray-500">
+                <p className="font-primary text-gray-500">
                   {`${blog.timeToRead}`} minutes read
                 </p>
               </div>
-              <p className="text-xl font-medium p-2">{blog.title}</p>
+              <p className="font-primary text-lg font-medium px-4 py-2 text-gray-900">
+                {blog.title}
+              </p>
             </div>
           </a>
         </Link>

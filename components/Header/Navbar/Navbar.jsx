@@ -27,7 +27,7 @@ const Navbar = () => {
           : ""
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto  justify-between items-center hidden lg:flex">
         <Link href="/">
           <Image
             src={dakshyaLogo}

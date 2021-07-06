@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       boxShadow: {
         primary: "0px 8px 40px 2px rgba(85, 85, 85, 0.08)",
+        secondary: "rgb(0 0 0 / 8%) 0px 1px 12px",
       },
       container: {
         padding: {
