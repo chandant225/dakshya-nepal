@@ -1,21 +1,21 @@
 export const data = [
   {
     sub_heading: "Qbex",
-    heading: "Why should you use Qbex ?",
+    heading: "Entire school in your single gadget",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo massa, sollicitudin id volutpat ut, vehicula vel nunc. Donec condimentum est dui, et pharetra velit tristique vitae.",
     list: [
       {
-        name: "Fusce porttitor ligula a nunc dignissim sagittis. Cras pharetra felis quis nisl efficitur, vel egestas nisi sodales.",
+        name: "Reduces cost time and error",
       },
       {
-        name: "Fusce porttitor ligula a nunc dignissim sagittis. Cras pharetra felis quis nisl efficitur, vel egestas nisi sodales.",
+        name: "Past errors for future forecasting",
       },
       {
-        name: "Fusce porttitor ligula a nunc dignissim sagittis. Cras pharetra felis quis nisl efficitur, vel egestas nisi sodales.",
+        name: "Minimizing gap in parents child relationship",
       },
       {
-        name: "Fusce porttitor ligula a nunc dignissim sagittis. Cras pharetra felis quis nisl efficitur, vel egestas nisi sodales.",
+        name: "Conveniently operate online school ",
       },
     ],
     order: 0,
@@ -23,18 +23,49 @@ export const data = [
   },
   {
     sub_heading: "Dolphin Pen",
-    heading: "What is special about our dolphin pen ?",
+    heading: "Feel the new experience of learning with Dolphin Talking pen",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo massa, sollicitudin id volutpat ut, vehicula vel nunc. Donec condimentum est dui, et pharetra velit tristique vitae.",
+      "Dolphin Talking Pen (Reading Pen) is a one-of-a-kind educational instrument in the shape of a dolphin (slightly larger than a pen) that recites the alphabet written material or even more, such as character dialogue on the pages, there are hints about how to play the game, and so on.",
     order: 1,
     color_code: "purple",
+    list: [
+      {
+        name: "Break the monotonous method of learning.",
+      },
+      {
+        name: "Make learning enjoyable and entertaining for young learners",
+      },
+      {
+        name: "Learn pronunciation with clean and clear voice",
+      },
+      {
+        name: "Enhance student's learning experiences by emphasizing the significant benefits of listening",
+      },
+      {
+        name: "Exciting and engaging",
+      },
+    ],
   },
   {
     sub_heading: "CMS",
-    heading: "What is CMS and how it can boost your school performance",
+    heading: "Make Your School Shine",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo massa, sollicitudin id volutpat ut, vehicula vel nunc. Donec condimentum est dui, et pharetra velit tristique vitae.",
+      "Manage your website in a few clicks with Dakshya CMS. We offer a professionally built dashboard that allows users to manage the web pages easily and promptly. No coding, no hosting, all you do is point, click and publish.",
     order: 0,
     color_code: "indigo",
+    list: [
+      {
+        name: "User-friendly control panel to easily manage your website",
+      },
+      {
+        name: "Optimum web hosting for affordable prices",
+      },
+      {
+        name: "Get website analytics to better understand your users",
+      },
+      {
+        name: "Power to update your content on regular basis",
+      },
+    ],
   },
 ];

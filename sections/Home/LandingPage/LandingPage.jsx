@@ -2,7 +2,13 @@ import React from "react";
 import { PrimaryButton, LandingSlider } from "../../../components";
 const LandingPage = () => {
   return (
-    <div className="mt-0 relative">
+    <div
+      className="mt-0 relative"
+      style={{
+        backgroundImage:
+          "linear-gradient(180deg, #FFFBEF 0%, rgba(254, 250, 237, 0) 87.5%)",
+      }}
+    >
       <div
         className="container mx-auto block lg:grid"
         style={{ gridTemplateColumns: ".5fr 1fr" }}

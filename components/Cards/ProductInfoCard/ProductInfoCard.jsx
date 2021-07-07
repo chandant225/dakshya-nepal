@@ -17,7 +17,9 @@ const ProductInfoCard = ({
   console.log(order, color_code);
   return (
     <div className="grid grid-cols-2">
-      <div className={`order-${order} place-self-center`}>
+      <div
+        className={`${order === 0 ? "order-0" : "order-1"} place-self-center`}
+      >
         <h1>illustration here</h1>
       </div>
       <div className="flex flex-col product__infoCard">
