@@ -7,11 +7,11 @@
     "animate": "fade-up"
   },
   {
-    "name": "Guidance Counseling",
+    "name": "Qbex",
     "price": 200,
-    "link": "/products/guidance-counseling",
-    "image": "/illustrations/Guidance Counseling.svg",
-    "animate": "fade-left"
+    "link": "/products/qbex",
+    "image": "/illustrations/Qubex.svg",
+    "animate": "fade-up"
   },
   {
     "name": "Dakshya CMS",
@@ -21,10 +21,10 @@
     "animate": "fade-right"
   },
   {
-    "name": "Qbex",
+    "name": "Guidance Counseling",
     "price": 200,
-    "link": "/products/qbex",
-    "image": "/illustrations/Qubex.svg",
-    "animate": "fade-up"
+    "link": "/products/guidance-counseling",
+    "image": "/illustrations/Guidance Counseling.svg",
+    "animate": "fade-left"
   }
 ]
