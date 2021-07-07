@@ -1,23 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Accordion from "../../components/Accordion/Accordion";
 import FeaturesData from "./cmsFeatures.json";
 import ContactSalesForm from "../../components/ContactSalesForm/ContactSalesForm";
 import Link from "next/link";
+import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
+import Aos from "aos";
 
 const DakshyaCms = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="container mx-auto">
-      <div className=" flex flex-row relative justify-between">
-        <Accordion title={"Dakshya-CMS"} />
+      <div className=" flex flex-row relative justify-between shadow-md lg:shadow-none py-8">
+        <Accordion title={"Dakshya CMS"} />
         <Link href="#contactsalesform">
-          <a>
-            <button className="text-white absolute right-0 px-3 py-2 bg-black w-[10rem] h-[3rem] rounded-full font-medium mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white mr-2">
-              Contact Sales
-            </button>
+          <a className="absolute lg:top-12 lg:right-4 right-2 top-6">
+            <SecondaryButton text={"Contact Sales"} />
           </a>
         </Link>
       </div>
-      <div className="mt-12">
+      <div className="lg:mt-0 mt-8">
         <h1 className="text-4xl font-medium">
           Create, Manage, Modify And Publish Your Website With A Powerful CMS
         </h1>
@@ -29,12 +34,13 @@ const DakshyaCms = () => {
         </p>
       </div>
       <div>
-        <h1 className="py-10 text-4xl font-medium">Features</h1>
+        <h1 className="py-8 text-4xl font-medium">Features</h1>
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-x-5 gap-y-7">
           {FeaturesData &&
             FeaturesData.map((data, index) => (
               <div
-                className="shadow-lg p-2 text-center rounded-2xl hover:shadow-2xl"
+                data-aos="zoom-in"
+                className="shadow-lg p-2 lg:mt-0 mt-4 text-center rounded-2xl hover:shadow-2xl"
                 key={index}
               >
                 <div className="w-[35%] m-auto border-2 p-4 rounded-full">
@@ -48,13 +54,16 @@ const DakshyaCms = () => {
       </div>
       <div className="mt-10">
         <h1 className="text-4xl font-medium">Why Dakshya CMS?</h1>
-        <div className="flex lg:flex-row flex-col lg:gap-12 gap-0 items-center justify-center">
-          <img
-            className="lg:w-[40%] w-full"
-            src="/images/products/kalam/Power To You.svg"
-            alt="Power To You"
-          />
-          <div className="lg:w-[60%] w-full">
+        <div className="flex lg:flex-row flex-col lg:gap-12 gap-0 items-center justify-center lg:mt-8 mt-6">
+          <div data-aos="flip-left" className="bg-[#FEF6E0] lg:w-[40%] p-6">
+            <img
+              className="w-full object-contain"
+              src="/images/products/kalam/Power To You.svg"
+              alt="Power To You"
+            />
+          </div>
+
+          <div data-aos="flip-right" className="lg:w-[60%] w-full lg:mt-0 mt-4">
             <h1 className="text-2xl font-medium py-2">Power To You</h1>
             <p className="text-gray-500">
               Dakshya lets you create, manage, and modify your website content
@@ -65,8 +74,8 @@ const DakshyaCms = () => {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-0 items-center justify-center">
-          <div className="lg:w-[60%] w-full">
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-0 items-center justify-center lg:mt-8 mt-6">
+          <div data-aos="flip-left" className="lg:w-[60%] w-full lg:py-0 py-4">
             <h1 className="text-2xl font-medium py-2">Empower Your Manpower</h1>
             <p className="text-gray-500">
               Since it’s an easy-to-use CMS, you can multi-use your website as a
@@ -77,19 +86,24 @@ const DakshyaCms = () => {
               becomes a helpful guide in choosing you.
             </p>
           </div>
-          <img
-            className="lg:w-[40%] w-full"
-            src="/images/products/kalam/Empower Your Manpower.svg"
-            alt="Empower Your Manpower"
-          />
+          <div data-aos="flip-right" className="bg-[#FEF6E0] lg:w-[40%] p-6">
+            <img
+              className="w-full object-contain"
+              src="/images/products/kalam/Empower Your Manpower.svg"
+              alt="Empower Your Manpower"
+            />
+          </div>
         </div>
-        <div className="flex lg:flex-row flex-col gap-12 items-center justify-center">
-          <img
-            className="lg:w-[40%] w-full"
-            src="/images/products/kalam/A Perfect Promotion Tool.svg"
-            alt="Power To You"
-          />
-          <div className="lg:w-[60%] w-full">
+        <div className="flex lg:flex-row flex-col gap-12 items-center justify-center lg:mt-8 mt-6">
+          <div data-aos="flip-right" className="bg-[#FEF6E0] lg:w-[40%] p-6">
+            <img
+              className="w-full object-contain"
+              src="/images/products/kalam/A Perfect Promotion Tool.svg"
+              alt="Power To You"
+            />
+          </div>
+
+          <div data-aos="flip-left" className="lg:w-[60%] w-full">
             <h1 className="text-2xl font-medium py-2">
               A Perfect Promotion Tool
             </h1>

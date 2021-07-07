@@ -3,6 +3,7 @@ import Accordion from "../../components/Accordion/Accordion";
 import Link from "next/link";
 import CounselingForm from "../../components/CounselingForm/CounselingForm";
 import Aos from "aos";
+import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
 
 const GuidanceCounseling = () => {
   useEffect(() => {
@@ -12,17 +13,15 @@ const GuidanceCounseling = () => {
   });
   return (
     <div className="container mx-auto">
-      <div className="shadow-sm flex flex-row relative justify-between">
-        <Accordion title={"Guidance-Counseling"} />
+      <div className="flex flex-row relative justify-between py-8 lg:shadow-none shadow-md">
+        <Accordion title={"Guidance Counseling"} />
         <Link href="#councelingForm">
-          <a>
-            <button className="text-white px-3 py-2 absolute right-0 bg-black lg:w-[10rem] w-[10rem] h-[3rem] rounded-full font-medium lg:mt-6 mt-2 hover:border-2 border-black focus:outline-none hover:text-black hover:bg-white lg:mr-4 mr-1">
-              Book Session
-            </button>
+          <a className="absolute lg:top-12 top-6 lg:right-6 right-2 ">
+            <SecondaryButton text={"Book Session"} />
           </a>
         </Link>
       </div>
-      <div className="mt-6">
+      <div className="lg:mt-0 mt-8">
         <h1 className="text-4xl font-medium py-4">Guidance Counseling</h1>
         <p className="text-gray-500">
           Dakshya Nepal brings to you Guidance Counselors who help both the
@@ -34,7 +33,7 @@ const GuidanceCounseling = () => {
         </p>
       </div>
       <div className="">
-        <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center justify-center">
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center justify-center lg:py-10">
           <div data-aos="fade-up-right" className="lg:w-[60%] w-full">
             <h1 className="text-2xl font-medium py-2">
               Coping With Academic And Personal Struggles
@@ -46,20 +45,27 @@ const GuidanceCounseling = () => {
               here to help them tackle such hurdles they face.
             </p>
           </div>
-          <img
+          <div
             data-aos="fade-up"
-            className="lg:w-[40%] w-full"
-            src="/images/products/counceling/1.svg"
-            alt="Coping With Academic And Personal Struggles"
-          />
+            className="bg-[#FEF6E0] lg:w-[40%] lg:mt-0 mt-6"
+          >
+            <img
+              className="w-full object-contain"
+              src="/images/products/counseling/1.svg"
+              alt="Coping With Academic And Personal Struggles"
+            />
+          </div>
         </div>
-        <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center">
-          <img
-            data-aos="flip-left"
-            className="lg:w-[40%] w-full"
-            src="/images/products/counceling/2.svg"
-            alt="Minimizing Gap In Parent-Child Relationship"
-          />
+        <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center lg:py-10">
+          <div className="bg-[#FEF6E0] lg:w-[40%] lg:mt-0 mt-6">
+            <img
+              data-aos="flip-left"
+              className="w-full object-contain"
+              src="/images/products/counseling/2.svg"
+              alt="Minimizing Gap In Parent-Child Relationship"
+            />
+          </div>
+
           <div data-aos="flip-right" className="lg:w-[60%] w-full">
             <h1 className="text-2xl font-medium py-2">
               Minimizing Gap In Parent-Child Relationship
@@ -72,7 +78,7 @@ const GuidanceCounseling = () => {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center justify-center">
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center justify-center lg:py-10">
           <div data-aos="slide-up" className="lg:w-[60%] w-full">
             <h1 className="text-2xl font-medium py-2">
               Reliable Support System For Students
@@ -83,20 +89,25 @@ const GuidanceCounseling = () => {
               academically. This will always be kept confidential
             </p>
           </div>
-          <img
-            data-aos="zoom-in"
-            className="lg:w-[40%] w-full"
-            src="/images/products/counceling/3.svg"
-            alt="Reliable Support System For Students"
-          />
+          <div className="bg-[#FEF6E0] lg:w-[40%] lg:mt-0 mt-6">
+            <img
+              data-aos="zoom-in"
+              className="w-full object-contain"
+              src="/images/products/counseling/3.svg"
+              alt="Reliable Support System For Students"
+            />
+          </div>
         </div>
-        <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center">
-          <img
-            data-aos="fade-up"
-            className="lg:w-[40%] w-full"
-            src="/images/products/counceling/4.svg"
-            alt="Facilitated Mediator For Parents"
-          />
+        <div className="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center justify-center lg:py-10">
+          <div className="bg-[#FEF6E0] lg:w-[40%] w-full lg:mt-0 mt-6">
+            <img
+              data-aos="fade-up"
+              className="w-full object-contain"
+              src="/images/products/counseling/4.svg"
+              alt="Facilitated Mediator For Parents"
+            />
+          </div>
+
           <div data-aos="fade-up" className="lg:w-[60%] w-full">
             <h1 className="text-2xl font-medium py-2">
               Facilitated Mediator For Parents
@@ -156,29 +167,32 @@ const GuidanceCounseling = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="bg-[#FEF6E0] lg:w-[35rem] flex w-full lg:h-[32rem] h-auto lg:py-0 py-8">
             <img
-              className="object-cover w-[35rem]  h-[16rem]"
-              src="/images/products/Girl_on_a_chair.png"
+              className="object-contain w-full items-center justify-center"
+              src="/illustrations/Girl on a chair.svg"
               alt="Girl_on_a_chair"
             />
           </div>
         </div>
       </div>
-      <div className="mt-8">
-        <div className="flex lg:flex-row flex-col gap-8">
-          <img
-            data-aos="zoom-in"
-            className="object-cover lg:w-[50%] w-full"
-            src="/images/products/Online_classes.png"
-            alt="Online_classes"
-          />
-          <div data-aos="zoom-in" className="lg:w-[50%] w-full mt-8">
-            <h1 className="text-3xl font-medium ">
+      <div className="lg:pt-12 pt-6">
+        <div className="flex lg:flex-row flex-col gap-8 mt-2">
+          <div className="lg:w-[50%] w-full flex bg-[#FEF6E0]">
+            <img
+              data-aos="zoom-in"
+              className="object-contain items-center justify-center w-full"
+              src="/images/online-classes.svg"
+              alt="Online_classes"
+            />
+          </div>
+
+          <div data-aos="zoom-in" className="lg:w-[50%] w-full">
+            <h1 className="text-3xl font-medium">
               With Your Partnership With Us, We Promise On Fulfilling The
               Following Duties
             </h1>
-            <p className="text-gray-500">
+            <p className="text-gray-500 mt-4">
               Counseling with regards to academics Providing instruction on
               psychological and social issues Help with college or career
               selection Early intervention about learning difficulties Maintain
