@@ -10,6 +10,10 @@ import "../styles/custom-text-slick.css";
 import "../styles/fonts.css";
 import "aos/dist/aos.css";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+// Import Swiper styles
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css";
 
 function MyApp({ Component, pageProps }) {
   return (
