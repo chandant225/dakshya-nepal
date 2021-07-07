@@ -17,7 +17,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div className="mt-24 bg-black">
-      <div className="container mx-auto grid grid-cols-3  py-10">
+      <div className="container mx-auto grid lg:grid-cols-3 grid-cols-1  py-10">
         <div className="space-y-5">
           <Image src={logo_white} className="" alt="dakshya_logo white" />
           <div className="flex gap-5">
@@ -122,7 +122,7 @@ const Footer = () => {
               frameborder="0"
               scrolling="no"
               marginheight="0"
-              marginwidth="0"
+              marginWidth="0"
               className="rounded shadow transform transition-all ease-in-out duration-300 hover:-translate-y-2 -translate-x-5 md:-translate-x-0 lg:-translate-x-0 hover:shadow-lg"
               src="https://maps.google.com/maps?q=dakshyaNepal&t=&z=13&ie=UTF8&iwloc=&output=embed"
             ></iframe>
