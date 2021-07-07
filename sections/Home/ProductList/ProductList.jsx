@@ -1,50 +1,52 @@
-import React from "react";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import { ProductNav, PrimaryButton } from "../../../components";
+import { dummy } from "./dummy";
 
-import dolphin_pen from "../../../public/images/dolphin.png";
-
-const dummy = [
-  {
-    name: "Talking Pen",
-  },
-  {
-    name: "Digital Content",
-  },
-  {
-    name: "Qbex Kid",
-  },
-  {
-    name: "Qbex",
-  },
-  {
-    name: "CMS",
-  },
-];
 const ProductList = () => {
+  const [activekey, setActiveKey] = useState(1);
+  const [activeProduct, setActiveProduct] = useState(
+    dummy.filter((d) => d.id === activekey).map((filterData) => filterData)
+  );
+  useEffect(() => {
+    const currActiveProduct = dummy
+      .filter((d) => d.id === activekey)
+      .map((filteredData) => filteredData);
+    return () => {
+      setActiveProduct(currActiveProduct);
+    };
+  }, [activekey, activeProduct]);
+
   return (
     <div className="bg-[#FEF6E0] bg-opacity-30 relative">
       <div className="flex justify-center items-center flex-col mt-20 py-10 container mx-auto">
-        <ProductNav items={dummy} />
-        <div className="pt-10 flex w-full space-x-32" style={{}}>
-          <div className="flex justify-center items-center w-40">
-            <Image src={dolphin_pen} alt="" className="z-[2] " />
-          </div>
-          <div className="space-y-3 w-[564px]">
-            <p className="text-base font-primary text-blue-600 font-semibold">
-              Talking Pen
-            </p>
-            <p className="text-[32px] font-primary font-semibold text-gray-900">
-              Making Learning more fun with Talking Pen
-            </p>
-            <p className="text-base font-primary text-gray-600">
-              Dolphin Talking Pen is an interactive tool that matches words and
-              images in our reading books. When readers use Dolphin Talking Pen,
-              it touches the book then a preloaded audio file is activated and
-              spoken by the speaker inside.
-            </p>
-            <PrimaryButton text="Learn More" link="/" />
-          </div>
+        <ProductNav
+          items={dummy}
+          activekey={activekey}
+          setActiveKey={setActiveKey}
+        />
+        <div
+          className="pt-10 flex flex-col md:flex-row w-full lg:space-x-32"
+          style={{}}
+        >
+          {activeProduct.map((d, index) => (
+            <>
+              <div className="flex justify-center items-center w-40">
+                <img src={d.image} alt="" className="z-[2]" />
+              </div>
+              <div className="space-y-3 w-full lg:w-[564px]">
+                <p className="text-base font-primary text-blue-600 font-semibold">
+                  {d.name}
+                </p>
+                <p className="text-[32px] font-primary font-semibold text-gray-900">
+                  {d.heading}
+                </p>
+                <p className="text-base font-primary text-gray-600">
+                  {d.description}
+                </p>
+                <PrimaryButton text="Learn More" link="/" />
+              </div>
+            </>
+          ))}
         </div>
         <svg
           width="306"
@@ -52,7 +54,7 @@ const ProductList = () => {
           viewBox="0 0 306 497"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-14 left-0 h-96"
+          className="absolute top-[110px] md:top-14 left-0 h-72 md:h-96 z-[1]"
         >
           <path
             fillRule="evenodd"

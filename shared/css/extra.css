@@ -7,3 +7,23 @@
   display: flex;
   justify-content: unset !important;
 }
+
+.product__infoCard ul li::before {
+  content: "👉";
+  position: absolute;
+  left: -30px;
+}
+
+.product__infoCard ul {
+  list-style: none !important;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.swiper-slide {
+  width: 100% !important;
+}
+
+.swiper-slide-prev {
+  opacity: 0 !important;
+}

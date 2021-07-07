@@ -1,62 +1,37 @@
 import React from "react";
-import ss from "../../../public/images/ss.svg";
-import { PrimaryCard } from "../../Cards";
-import Slider from "react-slick";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// import Swiper core and required modules
+import SwiperCore, { Autoplay, EffectFade, Pagination } from "swiper/core";
+import { SliderCard } from "../../Cards";
+import { data } from "./dummy";
+
+// install Swiper modules
+SwiperCore.use([Pagination, EffectFade, Autoplay]);
 
 const LandingSlider = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    autoplay: false,
-    speed: 500,
-    initialSlide: 1,
-    centerPadding: "0px",
-    variableWidth: true,
-    dots: true,
-    showNav: false,
-    customPaging: function (i) {
-      return (
-        <a href="#blank">
-          <div key={i} />
-        </a>
-      );
-    },
-  };
-
   return (
-    <div className="w-full mt-16 md:mt-0">
-      <Slider {...settings}>
-        <div>
-          <PrimaryCard
-            link="/something"
-            name="Dolphin Talking Pen"
-            image={ss}
+    <Swiper
+      slidesPerView={1}
+      // effect={"fade"}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // }}
+      className=""
+    >
+      {data.map((d, index) => (
+        <SwiperSlide>
+          <SliderCard
+            title={d.name}
+            description={d.description}
+            image={d.images}
+            key={index}
           />
-        </div>
-        <div>
-          <PrimaryCard
-            link="/something"
-            name="Dolphin Talking Pen"
-            image={ss}
-          />
-        </div>
-        <div>
-          <PrimaryCard
-            link="/something"
-            name="Dolphin Talking Pen"
-            image={ss}
-          />
-        </div>
-        <div>
-          <PrimaryCard
-            link="/something"
-            name="Dolphin Talking Pen"
-            image={ss}
-          />
-        </div>
-      </Slider>
-    </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 
