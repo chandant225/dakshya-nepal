@@ -9,11 +9,18 @@ import "../styles/skeleton.css";
 import "../styles/custom-text-slick.css";
 import "../styles/fonts.css";
 import "aos/dist/aos.css";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 function MyApp({ Component, pageProps }) {
   return (
     <RootLayout>
       <Component {...pageProps} />
+      <MessengerCustomerChat
+        pageId={process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID}
+        appId={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
+        themeColor="#ffb001"
+      />
+      ,
     </RootLayout>
   );
 }
