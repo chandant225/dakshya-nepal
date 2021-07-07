@@ -2,14 +2,17 @@ import React from "react";
 import { PrimaryButton, LandingSlider } from "../../../components";
 const LandingPage = () => {
   return (
-    <div className="mt-[45px] lg:mt-[100px] relative">
-      <div className="container mx-auto block lg:grid lg:grid-cols-2">
-        <div className="flex flex-col space-y-2 w-full md:w-[436px]">
+    <div className="mt-0 relative">
+      <div
+        className="container mx-auto block lg:grid"
+        style={{ gridTemplateColumns: ".5fr 1fr" }}
+      >
+        <div className="flex flex-col space-y-2 w-full md:w-[436px] justify-center mb-28">
           <p className="text-lg font-primary font-medium text-gray-900 capitalize">
             We Believe In
           </p>
           <div className="flex space-x-3">
-            <p className="text-5xl font-primary font-medium text-gray-900 capitalize">
+            <p className="text-5xl font-primary font-medium text-yellow-400 capitalize">
               Skilled
             </p>
             <p className="text-5xl font-primary font-medium text-gray-900 capitalize">
@@ -26,11 +29,11 @@ const LandingPage = () => {
             <PrimaryButton text="Explore Products" link="/products" />
           </div>
         </div>
-        <div>
+        <div className="h-full w-full">
           <LandingSlider />
         </div>
       </div>
-      <svg
+      {/* <svg
         width="598"
         height="616"
         viewBox="0 0 598 616"
@@ -42,7 +45,7 @@ const LandingPage = () => {
           d="M343.114 372.977C-38.5 372.977 -13.0535 37.8336 13.6267 -42H305.813H598V608.525C364.872 655.319 330.939 470.99 343.114 372.977Z"
           fill="#FACD2E"
         />
-      </svg>
+      </svg> */}
     </div>
   );
 };
