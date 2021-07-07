@@ -26,6 +26,10 @@ const Navbar = () => {
           ? "sticky top-0 bg-white shadow z-50"
           : ""
       }`}
+      style={{
+        backgroundImage:
+          "linear-gradient(135deg, #FFFBEF 0%, rgba(254, 250, 237, 0) 87.5%)",
+      }}
     >
       <div className="container mx-auto  justify-between items-center hidden lg:flex">
         <Link href="/">

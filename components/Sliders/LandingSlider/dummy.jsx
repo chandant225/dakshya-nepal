@@ -15,9 +15,9 @@ export const data = [
     images: {
       primary: "/images/Products/qbex/qbex.png",
       secondary: "/images/Products/qbex/rating.png",
-      third: "/images/qbex/Products/play_store.png",
-      forth: "/images/qbex/Products/qbex_online.png",
-      fifth: "/images/qbex/Products/mokup_laptop.png",
+      third: "/images/Products/qbex/play_store.png",
+      forth: "/images/Products/qbex/qbex_online.png",
+      fifth: "/images/Products/qbex/mokup_laptop.png",
     },
   },
 ];
