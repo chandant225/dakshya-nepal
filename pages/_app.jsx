@@ -16,8 +16,8 @@ function MyApp({ Component, pageProps }) {
     <RootLayout>
       <Component {...pageProps} />
       <MessengerCustomerChat
-        pageId="1454212978176971"
-        appId="779641199345768"
+        pageId={process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID}
+        appId={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
         themeColor="#ffb001"
       />
       ,
