@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
 
@@ -22,9 +21,6 @@ const PrimaryCard = ({ name, pricing, link, image }) => {
               alt={name}
               className="object-contain w-full h-[200px]"
             />
-          </div>
-          <div className="w-full h-full">
-            <Image src={image} alt="" />
           </div>
         </div>
       </a>

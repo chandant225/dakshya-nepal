@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <Wrapper
       className={`py-6 ${
-        router.pathname !== "/" && "bg-white shadow sticky top-0"
+        router.pathname !== "/" && "bg-white shadow sticky top-0 z-50"
       } ${
         router.pathname === "/" && navActive
           ? "sticky top-0 bg-white shadow z-50"
