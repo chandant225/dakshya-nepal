@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PrimaryButton } from "../../Buttons";
 import styled from "styled-components";
+import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
 // local
 import dakshyaLogo from "../../../public/icons/dakshya_logo.svg";
 

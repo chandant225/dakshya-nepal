@@ -1,17 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { ShieldCheckIcon } from "@heroicons/react/solid";
-
-import modern_school from "../../../public/icons/schools/modern_indian.png";
-import islington from "../../../public/icons/schools/islington.png";
 import dav from "../../../public/icons/schools/dav.png";
 
 const Clients = () => {
   const settings = {
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
     dots: false,
@@ -19,7 +15,7 @@ const Clients = () => {
     infinite: true,
   };
   return (
-    <div className="mt-24 flex flex-col">
+    <div className="mt-10 flex flex-col">
       <div
         className="relative self-center flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300-300 to-yellow-500"
         style={{
@@ -43,22 +39,16 @@ const Clients = () => {
         Who trust us
       </p>
       <div className="pt-10">
-        <Slider {...settings}>
-          <Image src={modern_school} alt="" />
-          <Image src={dav} alt="" />
-          <Image src={islington} alt="" />
-          <Image src={modern_school} alt="" />
-          <Image src={dav} alt="" />
-          <Image src={islington} alt="" />
-          <Image src={modern_school} alt="" />
-          <Image src={dav} alt="" />
-          <Image src={islington} alt="" />
-          <Image src={modern_school} alt="" />
-          <Image src={dav} alt="" />
-          <Image src={islington} alt="" />
-          <Image src={modern_school} alt="" />
-          <Image src={dav} alt="" />
-          <Image src={islington} alt="" />
+        <Slider {...settings} className="flex">
+          <img src="/icons/schools/asb.png" alt="" className="" />
+          <img src="/icons/schools/bds.png" alt="" />
+          <img src="/icons/schools/ceb.png" alt="" />
+          <img src="/icons/schools/gss.png" alt="" />
+          <img src="/icons/schools/asb.png" alt="" />
+          <img src="/icons/schools/npsc.png" alt="" />
+          <img src="/icons/schools/npsk.png" alt="" />
+          <img src="/icons/schools/npss.png" alt="" />
+          <img src="/icons/schools/SEBS.png" alt="" />
         </Slider>
       </div>
     </div>

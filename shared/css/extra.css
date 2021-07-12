@@ -7,6 +7,10 @@
   display: flex;
   justify-content: unset !important;
 }
+.slick-slide img {
+  width: 6rem !important;
+  display: flex;
+}
 
 .product__infoCard ul li::before {
   content: "👉";

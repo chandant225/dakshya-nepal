@@ -13,14 +13,15 @@ const ProductInfoCard = ({
   list,
   order,
   color_code,
+  illustration,
 }) => {
   console.log(order, color_code);
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 gap-8">
       <div
         className={`${order === 0 ? "order-0" : "order-1"} place-self-center`}
       >
-        <h1>illustration here</h1>
+        <img src={illustration} alt="" />
       </div>
       <div className="flex flex-col product__infoCard">
         <div

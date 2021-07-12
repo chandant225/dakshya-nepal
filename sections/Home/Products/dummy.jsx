@@ -45,6 +45,7 @@ export const data = [
         name: "Exciting and engaging",
       },
     ],
+    illustration: "/images/Products/dolphin/pen_book.png",
   },
   {
     sub_heading: "CMS",
