@@ -41,7 +41,7 @@ const Testimonials = () => {
       </p>
       <div className="">
         <div className="absolute left-0">
-          <Image src={school_image} alt="" />
+          <img src="/illustrator/school_images.png" alt="" />
         </div>
         <Slider {...settings} className="py-3 px-3 relative">
           <TestimonialCard

@@ -13,7 +13,7 @@ const LandingPage = () => {
         className="container mx-auto block lg:grid"
         style={{ gridTemplateColumns: ".5fr 1fr" }}
       >
-        <div className="flex flex-col space-y-2 w-full md:w-[436px] justify-center mb-28">
+        <div className="flex flex-col space-y-2 w-full md:w-[410px] justify-center pt-20 md:pt-0 lg:mb-28">
           <p className="text-lg font-primary font-medium text-gray-900 capitalize">
             We Believe In
           </p>
@@ -35,7 +35,7 @@ const LandingPage = () => {
             <PrimaryButton text="Explore Products" link="/products" />
           </div>
         </div>
-        <div className="h-full w-full">
+        <div className="h-full w-[46rem] ml-20">
           <LandingSlider />
         </div>
       </div>

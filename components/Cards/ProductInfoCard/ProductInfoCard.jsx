@@ -19,9 +19,11 @@ const ProductInfoCard = ({
   return (
     <div className="grid grid-cols-2 gap-8">
       <div
-        className={`${order === 0 ? "order-0" : "order-1"} place-self-center`}
+        className={`${
+          order === 0 ? "order-0" : "order-1"
+        } place-self-center mt-16`}
       >
-        <img src={illustration} alt="" />
+        <img src={illustration} alt="" className="w-[32rem] h-auto" />
       </div>
       <div className="flex flex-col product__infoCard">
         <div

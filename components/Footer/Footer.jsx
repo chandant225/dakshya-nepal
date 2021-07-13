@@ -35,7 +35,7 @@ const Footer = () => {
               <Image
                 src={linkedin}
                 alt="linkedIn logo"
-                className="cursor-pointer"
+                className="cursor-pointer text-white"
               />
             </a>
             <a href="https://twitter.com/dakshyanepal" target="_blank">

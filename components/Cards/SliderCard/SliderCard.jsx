@@ -23,11 +23,11 @@ const SliderCard = ({ image, title, description }) => {
         <div className="relative grid place-items-center">
           <img src={image.primary} alt="image" className="w-36 h-auto" />
           <div className="absolute w-56 h-56 rounded-full bg-blue-50 place-self-center top-0 z-[-1]" />
-          <div className="mt-10 pl-8">
-            <p className="font-primary font-bold text-[34px] text-gray-900">
+          <div className="mt-10">
+            <p className="font-primary font-bold text-[34px] text-gray-900 px-8">
               {title}
             </p>
-            <p className="font-primary font-light tracking-wider text-sm text-gray-800">
+            <p className="font-primary font-light tracking-wider text-sm text-gray-800 px-8">
               {description}
             </p>
           </div>
