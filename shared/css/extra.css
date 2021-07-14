@@ -31,3 +31,6 @@
 .swiper-slide-prev {
   opacity: 0 !important;
 }
+
+@media screen and (max-width: 678px) {
+}

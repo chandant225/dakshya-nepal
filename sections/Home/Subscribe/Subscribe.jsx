@@ -12,7 +12,7 @@ const Subscribe = () => {
             type="email"
             name="email"
             id="email"
-            placeholder="Your Email Address Here"
+            placeholder="Your Email Address"
             className="text-lg font-primary rounded-full text-gray-400 w-full focus:outline-none py-6 px-3 md:px-6"
           />
           <button className="absolute font-primary bg-[#ffc700] text-white focus:outline-none right-3 md:right-5 py-4 px-6 rounded-full hover:bg-yellow-400 transition-all ease-in-out duration-300">
