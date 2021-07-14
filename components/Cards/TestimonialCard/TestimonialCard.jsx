@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TestimonialCard = ({ image, description, name }) => {
   return (
-    <div className="my-10 mx-4 py-[26px] px-10 w-[90vw] md:w-[536px] space-y-2 flex flex-col items-center justify-center bg-white rounded-tr-3xl rounded-bl-3xl shadow-lg hover:shadow-primary transition-all ease-in-out duration-300 transform hover:-translate-y-2">
+    <div className="my-10 mx-0 md:mx-4 py-[26px] px-10 w-auto md:w-[536px] space-y-2 flex flex-col items-center justify-center bg-white rounded-tr-3xl rounded-bl-3xl shadow-lg hover:shadow-primary transition-all ease-in-out duration-300 transform hover:-translate-y-2">
       <Image
         src={image}
         width="96px"

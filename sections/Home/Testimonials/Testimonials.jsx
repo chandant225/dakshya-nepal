@@ -11,7 +11,7 @@ const Testimonials = () => {
     infinite: true,
     speed: 300,
     verticalSwiping: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     dots: true,
   };
