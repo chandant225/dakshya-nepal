@@ -4,10 +4,10 @@ const SliderCard = ({ image, title, description }) => {
   console.log(image, "images");
   return (
     <div
-      className="grid h-[90vh] w-full"
+      className="md:grid h-full md:h-[90vh] w-full"
       style={{ gridTemplateColumns: ".5fr 1fr .5fr" }}
     >
-      <div className="flex flex-col space-y-5 h-full items-center justify-center transform -translate-y-14">
+      <div className="hidden flex-col space-y-5 h-full items-center justify-center transform -translate-y-14 md:flex">
         <div className="w-32 h-32 bg-yellow-400 rounded-xl shadow-2xl flex justify-center items-center">
           {image.forth && (
             <img src={image.forth} alt="" className="w-36 h-auto px-2 py-2" />
@@ -19,7 +19,7 @@ const SliderCard = ({ image, title, description }) => {
           )}
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center h-[496px] shadow-2xl rounded-xl place-self-center">
+      <div className="flex flex-col justify-center items-center h-[496px] shadow-none rounded-none md:shadow-2xl md:rounded-xl place-self-center">
         <div className="relative grid place-items-center">
           <img src={image.primary} alt="image" className="w-36 h-auto" />
           <div className="absolute w-56 h-56 rounded-full bg-blue-50 place-self-center top-0 z-[-1]" />
@@ -33,7 +33,7 @@ const SliderCard = ({ image, title, description }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-5 h-full items-center justify-center transform translate-y-10">
+      <div className="md:flex flex-col space-y-5 h-full items-center justify-center transform translate-y-10 hidden">
         <div className="w-24 h-24 bg-white shadow-2xl rounded-xl flex justify-center items-center">
           {image.secondary && (
             <img

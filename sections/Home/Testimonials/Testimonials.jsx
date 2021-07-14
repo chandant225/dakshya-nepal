@@ -10,7 +10,7 @@ const Testimonials = () => {
     infinite: true,
     speed: 300,
     verticalSwiping: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     dots: true,
   };
@@ -39,10 +39,10 @@ const Testimonials = () => {
         Our Happy Customers
       </p>
       <div className="">
-        <div className="absolute left-0">
+        <div className="absolute left-0 hidden lg:block">
           <img src="/illustrator/school_images.png" alt="" />
         </div>
-        <Slider {...settings} className="py-3 px-3 relative">
+        <Slider {...settings} className="py-3 px-0 md:px-3 relative">
           <TestimonialCard
             name="John Doe"
             description="Eu platea volutpat ornare aliquam quam quis auctor orci morbi imperdiet nisi pellentesque sit sed ultrices sem habitant sed in vulputate nulla odio id pharetra massa donec tincidunt ullamcorper ac felis massa porttitor..."
