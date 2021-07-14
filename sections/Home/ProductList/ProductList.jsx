@@ -31,7 +31,7 @@ const ProductList = () => {
           {activeProduct.map((d, index) => (
             <>
               <div className="flex justify-center items-center w-40">
-                <img src={d.image} alt="" className="z-[2]" />
+                <img src={d.image} alt="" className="dolphin z-[2]" />
               </div>
               <div className="space-y-3 w-full lg:w-[564px]">
                 <p className="text-base font-primary text-blue-600 font-semibold">

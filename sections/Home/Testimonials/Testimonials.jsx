@@ -1,7 +1,6 @@
 import React from "react";
 import { TestimonialCard } from "../../../components";
 import Slider from "react-slick";
-import school_image from "../../../public/illustrator/school_images.png";
 import { UserGroupIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 
