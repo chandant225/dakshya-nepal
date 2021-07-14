@@ -96,12 +96,14 @@ const Navbar = () => {
         >
           <XIcon className="text-white w-10 float-right mr-2 mt-2" />
         </span>
-        <ul className="mt-4 pl-4">
+        <ul className="mt-14 pl-4 space-y-3 md:space-y-0">
           <li
             onClick={() => {
               CloseNav();
             }}
-            className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
+            className={`font-medium text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname === "/" && "text-yellow-500"
+            }`}
           >
             <Link href="/">Home</Link>
           </li>
@@ -109,7 +111,9 @@ const Navbar = () => {
             onClick={() => {
               CloseNav();
             }}
-            className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
+            className={`font-medium text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/products") && "text-yellow-500"
+            }`}
           >
             <Link href="/products">Products</Link>
           </li>
@@ -117,7 +121,9 @@ const Navbar = () => {
             onClick={() => {
               CloseNav();
             }}
-            className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
+            className={`font-medium text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/blogs") && "text-yellow-500"
+            }`}
           >
             <Link href="/blogs">Blogs</Link>
           </li>
@@ -125,7 +131,9 @@ const Navbar = () => {
             onClick={() => {
               CloseNav();
             }}
-            className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
+            className={`font-medium text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/about") && "text-yellow-500"
+            }`}
           >
             <Link href="/about">About</Link>
           </li>
@@ -133,7 +141,9 @@ const Navbar = () => {
             onClick={() => {
               CloseNav();
             }}
-            className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
+            className={`font-medium text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/careers") && "text-yellow-500"
+            }`}
           >
             <Link href="/careers">Careers</Link>
           </li>
