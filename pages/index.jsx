@@ -21,7 +21,7 @@ export default function Home() {
       <HomeLanding />
       <GoalInfo />
       <ProductList />
-      {/* <Features /> */}
+      <Features />
       <ProductsInfo />
       <Blogs />
       <CareerBox />

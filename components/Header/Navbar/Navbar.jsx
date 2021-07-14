@@ -87,6 +87,14 @@ const Navbar = () => {
             }}
             className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
           >
+            <Link href="/">Home</Link>
+          </li>
+          <li
+            onClick={() => {
+              CloseNav();
+            }}
+            className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
+          >
             <Link href="/products">Products</Link>
           </li>
           <li
