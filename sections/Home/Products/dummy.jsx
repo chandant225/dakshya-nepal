@@ -18,6 +18,7 @@ export const data = [
         name: "Conveniently operate online school ",
       },
     ],
+    illustration: "/images/Products/qbex/qbex_img.png",
     order: 0,
     color_code: "blue",
   },
@@ -45,6 +46,7 @@ export const data = [
         name: "Exciting and engaging",
       },
     ],
+    illustration: "/images/Products/dolphin/pen_book.png",
   },
   {
     sub_heading: "CMS",
@@ -67,5 +69,6 @@ export const data = [
         name: "Power to update your content on regular basis",
       },
     ],
+    illustration: "/images/Products/cms/cms_illustration.png",
   },
 ];

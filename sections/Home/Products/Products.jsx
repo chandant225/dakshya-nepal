@@ -13,6 +13,7 @@ const Products = () => {
           list={d.list}
           order={d.order}
           color_code={d.color_code}
+          illustration={d.illustration}
         />
       ))}
     </div>

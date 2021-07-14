@@ -7,6 +7,10 @@
   display: flex;
   justify-content: unset !important;
 }
+.slick-slide img {
+  width: 6rem !important;
+  display: flex;
+}
 
 .product__infoCard ul li::before {
   content: "👉";
@@ -26,4 +30,10 @@
 
 .swiper-slide-prev {
   opacity: 0 !important;
+}
+
+@media screen and (max-width: 678px) {
+  .slick-arrow {
+    display: none !important;
+  }
 }

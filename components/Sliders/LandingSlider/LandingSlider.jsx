@@ -14,7 +14,7 @@ const LandingSlider = () => {
   return (
     <Swiper
       slidesPerView={1}
-      // effect={"fade"}
+      effect={"fade"}
       // autoplay={{
       //   delay: 2500,
       //   disableOnInteraction: false,

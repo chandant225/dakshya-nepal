@@ -17,7 +17,7 @@ const ProductList = () => {
   }, [activekey, activeProduct]);
 
   return (
-    <div className="bg-[#FEF6E0] bg-opacity-30 relative">
+    <div className="bg-[#FEF6E0] bg-opacity-30 relative hidden md:block">
       <div className="flex justify-center items-center flex-col mt-20 py-10 container mx-auto">
         <ProductNav
           items={dummy}
@@ -31,7 +31,7 @@ const ProductList = () => {
           {activeProduct.map((d, index) => (
             <>
               <div className="flex justify-center items-center w-40">
-                <img src={d.image} alt="" className="z-[2]" />
+                <img src={d.image} alt="" className="dolphin z-[2]" />
               </div>
               <div className="space-y-3 w-full lg:w-[564px]">
                 <p className="text-base font-primary text-blue-600 font-semibold">

@@ -5,7 +5,7 @@ import { BlogCard, BlogSkeleton } from "../../../components";
 const Blogs = () => {
   const [BlogData, setBlogData] = useState("");
   const [loading, setLoading] = useState(true);
-  const [itemToshow, setitemToshow] = useState(6);
+  const [itemToshow, setitemToshow] = useState(3);
   useEffect(() => {
     fetch(
       `${process.env.NEXT_PUBLIC_CORE_API_URL}/api/collections/get/blog?sort[_created]=-1`
@@ -47,7 +47,7 @@ const Blogs = () => {
       <div className="w-full">
         {loading ? (
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 pt-4">
-            {[1, 2, 3, 4, 5, 6].map((n) => (
+            {[1, 2, 3].map((n) => (
               <BlogSkeleton key={n} />
             ))}
           </div>

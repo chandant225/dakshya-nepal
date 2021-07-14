@@ -7,13 +7,10 @@ import studyLaptopImg from "../../../public/illustrator/study_laptop.png";
 
 const Features = () => {
   return (
-    <div
-      className="mt-20 container mx-auto grid gap-5"
-      style={{ gridTemplateColumns: ".4fr 1fr" }}
-    >
+    <div className="mt-20 container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-5">
       <div className="space-y-3 mt-10">
         <div
-          className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
+          className="relative m-auto lg:m-0 flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
           style={{
             backgroundImage:
               "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
@@ -26,7 +23,7 @@ const Features = () => {
                 "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
             }}
           />
-          <CursorClickIcon className="w-8 h-8 text-white" />
+          <CursorClickIcon className="w-8 h-8  text-white" />
         </div>
         <p className="font-primary font-medium text-lg text-gray-800">
           Smart School
@@ -40,7 +37,7 @@ const Features = () => {
           consequuntur sapiente accusamus
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-5">
         <div className="transform translate-y-0 space-y-10 place-self-center">
           <FeatureCard
             title="Exam Quiz Software"
@@ -48,7 +45,7 @@ const Features = () => {
             image={quizImg}
           />
         </div>
-        <div className="space-y-10">
+        <div className="lg:space-y-10 space-y-6 lg:mt-0 mt-8 lg:ml-8">
           <FeatureCard
             title="Interactive Application"
             description="Extensive quiz software for students which consists of question banks with over 1lac questions"
