@@ -54,22 +54,38 @@ const Navbar = () => {
           className="text-black w-8 h-8 lg:hidden"
         />
         <ul className="items-center space-x-[32px] hidden lg:flex">
-          <li className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
+          <li
+            className={`font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/products") && "text-yellow-500"
+            }`}
+          >
             <Link href="/products">Products</Link>
           </li>
-          <li className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
+          <li
+            className={`font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/blogs") && "text-yellow-500"
+            }`}
+          >
             <Link href="/blogs">Blogs</Link>
           </li>
-          <li className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
+          <li
+            className={`font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/about") && "text-yellow-500"
+            }`}
+          >
             <Link href="/about">About</Link>
           </li>
-          <li className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
+          <li
+            className={`font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
+              router.pathname.includes("/careers") && "text-yellow-500"
+            }`}
+          >
             <Link href="/careers">Careers</Link>
           </li>
           <button className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
             क
           </button>
-          <PrimaryButton text="Contact Us" to="/contact" />
+          <PrimaryButton text="Contact Us" link="/contact" />
         </ul>
       </div>
       <div id="my_Sidebar" className="Sidebar">
