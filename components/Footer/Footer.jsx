@@ -87,7 +87,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5 block md:hidden xl:block">
             <p className="font-primary text-xl font-normal capitalize text-white">
               Company
             </p>
@@ -117,8 +117,9 @@ const Footer = () => {
           <div class="iframe-rwd">
             <iframe
               title="map"
-              width="350"
-              height="100"
+              // width="350"
+              width="100%"
+              height="125"
               frameborder="0"
               scrolling="no"
               marginheight="0"

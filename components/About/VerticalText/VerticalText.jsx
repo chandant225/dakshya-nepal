@@ -1,13 +1,11 @@
 import React from "react";
 import TextList from "./TextList";
 import TextSlider from "./TextSlider";
-import Image from "next/image";
-import about from "../../../images/about/about us.svg";
 
 const VerticalText = () => {
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-5 mt-1">
         <div className="relative h-[400px] about__text-slider">
           <TextSlider TextList={TextList} />
           <div
@@ -27,10 +25,10 @@ const VerticalText = () => {
           ></div>
         </div>
         <div>
-          <Image
-            src={about}
+          <img
+            src="/images/aboutUs.svg"
             alt=""
-            className=" h-auto md:h-full lg:h-[447px] "
+            className=" h-auto md:h-full lg:h-[447px]  "
           />
         </div>
       </div>

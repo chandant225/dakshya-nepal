@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const TeamWithoutDesc = ({ member }) => {
   return (
-    <div className="flex items-center pb-[20px]">
+    <div className="flex items-center pb-[20px] overflow-hidden">
       <img
         src={process.env.NEXT_PUBLIC_CORE_API_URL + member.Image.path}
         alt=""
-        className="rounded-md h-[145px] w-[130px] object-cover"
+        className="rounded-md h-[145px] w-[130px] object-cover transition-all hover:transform hover:scale-[1.1] duration-1000"
       />
       <div
         className="flex flex-col ml-[16px] font-primary "
@@ -19,13 +19,17 @@ const TeamWithoutDesc = ({ member }) => {
           <Link className="cursor-pointer" href={member.LinkedIn}>
             <img src="/icons/Linkedin.svg" alt="" className="cursor-pointer" />
           </Link>
-          <Link className="cursor-pointer" href={member.Email}>
+          <a
+            className="cursor-pointer"
+            href={`mailto:${member.Email}`}
+            style={{ paddingLeft: "10px !important" }}
+          >
             <img
               src="/icons/E-mail.svg"
               alt=""
               className="pl-2 cursor-pointer"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

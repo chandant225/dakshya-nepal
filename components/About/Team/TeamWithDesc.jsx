@@ -24,9 +24,9 @@ const TeamWithDesc = ({ member }) => {
                 className="cursor-pointer"
               />
             </Link>
-            <Link
+            <a
               className="cursor-pointer"
-              href={member.Email}
+              href={`mailto:${member.Email}`}
               style={{ paddingLeft: "10px !important" }}
             >
               <img
@@ -34,11 +34,11 @@ const TeamWithDesc = ({ member }) => {
                 alt=""
                 className="pl-2 cursor-pointer"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
-      <p className="text-sm font-primary text-gray-400">{member.desc}</p>
+      <p className="text-base font-primary text-gray-400 ">{member.desc}</p>
     </div>
   );
 };
