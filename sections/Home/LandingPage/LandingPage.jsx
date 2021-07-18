@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PrimaryButton, LandingSlider } from "../../../components";
+import { gsap } from "gsap";
+
 const LandingPage = () => {
   return (
     <div className="mt-0">

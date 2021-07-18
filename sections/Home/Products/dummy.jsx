@@ -21,6 +21,8 @@ export const data = [
     illustration: "/images/Products/qbex/qbex_img.png",
     order: 0,
     color_code: "blue",
+    animg: "fade-right",
+    antxt: "fade-left",
   },
   {
     sub_heading: "Dolphin Pen",
@@ -40,13 +42,16 @@ export const data = [
         name: "Learn pronunciation with clean and clear voice",
       },
       {
-        name: "Enhance student's learning experiences by emphasizing the significant benefits of listening",
+        name:
+          "Enhance student's learning experiences by emphasizing the significant benefits of listening",
       },
       {
         name: "Exciting and engaging",
       },
     ],
     illustration: "/images/Products/dolphin/pen_book.png",
+    antxt: "fade-right",
+    animg: "fade-left",
   },
   {
     sub_heading: "CMS",
@@ -70,5 +75,7 @@ export const data = [
       },
     ],
     illustration: "/images/Products/cms/cms_illustration.png",
+    animg: "fade-right",
+    antxt: "fade-left",
   },
 ];

@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import { ShieldCheckIcon } from "@heroicons/react/solid";
 import dav from "../../../public/icons/schools/dav.png";
+import aos from "aos";
+import { useEffect } from "react";
 
 const Clients = () => {
   const settings = {
@@ -14,9 +16,14 @@ const Clients = () => {
     draggable: true,
     infinite: true,
   };
+  useEffect(() => {
+    aos.init();
+  }, []);
   return (
     <div className="mt-10 flex flex-col">
       <div
+        data-aos-duration="2000"
+        data-aos="tilt-ball"
         className="relative self-center flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300-300 to-yellow-500"
         style={{
           backgroundImage:
@@ -35,7 +42,11 @@ const Clients = () => {
       <p className="text-center font-primary text-gray-800 text-lg font-medium pt-5">
         Clientele
       </p>
-      <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
+      <p
+        data-aos-duration="2000"
+        data-aos="text"
+        className="text-center font-primary text-[32px] font-medium capitalize text-gray-900"
+      >
         Who trust us
       </p>
       <div className="pt-10">

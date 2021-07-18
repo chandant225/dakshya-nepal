@@ -3,6 +3,8 @@ import { TestimonialCard } from "../../../components";
 import Slider from "react-slick";
 import { UserGroupIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import aos from "aos";
+import { useEffect } from "react";
 
 const Testimonials = () => {
   const settings = {
@@ -14,9 +16,14 @@ const Testimonials = () => {
     autoplaySpeed: 5000,
     dots: true,
   };
+  useEffect(() => {
+    aos.init();
+  }, []);
   return (
     <div className="container mx-auto mt-24 flex flex-col justify-center items-center">
       <div
+        data-aos-duration="2000"
+        data-aos="tilt-ball"
         className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
         style={{
           backgroundImage:
@@ -24,7 +31,7 @@ const Testimonials = () => {
         }}
       >
         <div
-          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -left-4"
+          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
           style={{
             backgroundImage:
               "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
@@ -35,10 +42,14 @@ const Testimonials = () => {
       <p className="text-lg font-semibold text-center mt-5 text-gray-700">
         Testimonial
       </p>
-      <p className="text-center font-primary text-[32px] font-medium capitalize text-gray-900">
+      <p
+        data-aos-duration="2000"
+        data-aos="text"
+        className="text-center font-primary text-[32px] font-medium capitalize text-gray-900"
+      >
         Our Happy Customers
       </p>
-      <div className="">
+      <div data-aos-duration="2000" data-aos="slide-up" className="">
         <div className="absolute left-0 hidden lg:block">
           <img src="/illustrator/school_images.png" alt="" />
         </div>
