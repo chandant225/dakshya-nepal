@@ -1,6 +1,5 @@
 import React from "react";
-// import { data as benefits } from "./BenefitData";
-import { data } from "./BenefitData";
+import { data as benefits } from "./BenefitData";
 
 const Benefit = ({ title, image, benefits }) => {
   return (
