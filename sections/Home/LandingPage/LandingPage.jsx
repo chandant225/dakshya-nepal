@@ -25,10 +25,7 @@ const LandingPage = () => {
               Nepal
             </p>
           </div>
-          <p
-            id="quote"
-            className="text-base font-primary font-normal text-gray-900 w-full"
-          >
+          <p className="text-base font-primary font-normal text-justify text-gray-900 w-full">
             Dakshya Nepal is a company fundamentally focused on digitizing the
             education system of the country. We deliver the proper mechanisms to
             revolutionize the traditional way of learning to make it more

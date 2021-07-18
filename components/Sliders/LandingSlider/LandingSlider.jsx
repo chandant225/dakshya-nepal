@@ -15,10 +15,10 @@ const LandingSlider = () => {
     <Swiper
       slidesPerView={1}
       effect={"fade"}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       className=""
     >
       {data.map((d, index) => (

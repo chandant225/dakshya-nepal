@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { ProductNav, PrimaryButton } from "../../../components";
 import { dummy } from "./dummy";
 import AOS from "aos";

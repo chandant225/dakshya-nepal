@@ -34,10 +34,6 @@ const Navbar = () => {
           ? "sticky top-0 bg-white shadow z-50"
           : ""
       }`}
-      style={{
-        backgroundImage:
-          "linear-gradient(135deg, #FFFBEF 0%, rgba(254, 250, 237, 0) 87.5%)",
-      }}
     >
       <div className="container mx-auto  justify-between items-center flex">
         <Link href="/">
@@ -52,7 +48,7 @@ const Navbar = () => {
           onClick={() => {
             OpenNav();
           }}
-          className="text-black w-8 h-8 lg:hidden"
+          className="text-black w-8 h-8 lg:hidden z-50"
         />
         <ul className="items-center space-x-[32px] hidden lg:flex">
           <li
