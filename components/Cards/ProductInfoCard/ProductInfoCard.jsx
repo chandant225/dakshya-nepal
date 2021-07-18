@@ -4,7 +4,6 @@ import {
   PencilIcon,
   TemplateIcon,
 } from "@heroicons/react/solid";
-import { list } from "postcss";
 
 const ProductInfoCard = ({
   sub_heading,
@@ -15,7 +14,6 @@ const ProductInfoCard = ({
   color_code,
   illustration,
 }) => {
-  console.log(order, color_code);
   return (
     <div className="block lg:grid lg:grid-cols-2 gap-8">
       <div

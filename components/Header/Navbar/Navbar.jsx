@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <Wrapper
+    <div
       className={`py-6 ${
         router.pathname !== "/" && "bg-white shadow sticky top-0 z-50"
       } ${
@@ -51,7 +51,7 @@ const Navbar = () => {
           onClick={() => {
             OpenNav();
           }}
-          className="text-black w-8 h-8 lg:hidden"
+          className="text-black w-8 z-50 h-8 lg:hidden"
         />
         <ul className="items-center space-x-[32px] hidden lg:flex">
           <li
@@ -165,10 +165,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 
 export default Navbar;
-
-const Wrapper = styled.div``;
