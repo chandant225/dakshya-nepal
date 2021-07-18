@@ -48,6 +48,7 @@ const Navbar = () => {
           />
         </Link>
         <MenuIcon
+          style={{ zIndex: "999" }}
           onClick={() => {
             OpenNav();
           }}

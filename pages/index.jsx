@@ -15,19 +15,26 @@ import {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home | Dakshya Nepal</title>
-      </Head>
-      <HomeLanding />
-      <GoalInfo />
-      <ProductList />
-      <Features />
-      <ProductsInfo />
-      <Blogs />
-      <CareerBox />
-      <Clients />
-      <Testimonials />
-      <Subscribe />
+      <div className="overflow-hidden">
+        <Head>
+          <title>Home | Dakshya Nepal</title>
+        </Head>
+        <HomeLanding />
+
+        <div className="small-ball"></div>
+        <div className="large-ball"></div>
+        {/* <div className="big-ball"></div> */}
+
+        <GoalInfo />
+        <ProductList />
+        <Features />
+        <ProductsInfo />
+        <Blogs />
+        <CareerBox />
+        <Clients />
+        <Testimonials />
+        <Subscribe />
+      </div>
     </>
   );
 }

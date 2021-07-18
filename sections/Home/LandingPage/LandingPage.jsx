@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PrimaryButton, LandingSlider } from "../../../components";
+import { gsap } from "gsap";
+
 const LandingPage = () => {
   return (
     <div className="mt-0">
@@ -23,7 +25,10 @@ const LandingPage = () => {
               Nepal
             </p>
           </div>
-          <p className="text-base font-primary font-normal text-gray-900 w-full">
+          <p
+            id="quote"
+            className="text-base font-primary font-normal text-gray-900 w-full"
+          >
             Dakshya Nepal is a company fundamentally focused on digitizing the
             education system of the country. We deliver the proper mechanisms to
             revolutionize the traditional way of learning to make it more
