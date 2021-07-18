@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { RssIcon } from "@heroicons/react/solid";
 import { BlogCard, BlogSkeleton } from "../../../components";
+import Aos from "aos";
 
 const Blogs = () => {
   const [BlogData, setBlogData] = useState("");
@@ -18,11 +19,14 @@ const Blogs = () => {
       .catch((err) => {
         console.log(err);
       });
+    Aos.init();
   }, []);
   const DisplayBlogs = BlogData.slice(0, itemToshow);
   return (
     <div className="mt-32 container mx-auto flex flex-col items-center">
       <div
+        data-aos-duration="2000"
+        data-aos="tilt-ball"
         className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
         style={{
           backgroundImage:
@@ -56,7 +60,9 @@ const Blogs = () => {
             <div className="grid lg:grid-cols-3 grid-cols-1 sm:px-2 lg:gap-12 gap-y-8 pt-8">
               {DisplayBlogs &&
                 DisplayBlogs.map((blog, index) => (
-                  <BlogCard blog={blog} key={index} />
+                  <div data-aos-duration="2000" data-aos="zoom-in">
+                    <BlogCard blog={blog} key={index} />
+                  </div>
                 ))}
             </div>
           </div>

@@ -34,10 +34,6 @@ const Navbar = () => {
           ? "sticky top-0 bg-white shadow z-50"
           : ""
       }`}
-      style={{
-        backgroundImage:
-          "linear-gradient(135deg, #FFFBEF 0%, rgba(254, 250, 237, 0) 87.5%)",
-      }}
     >
       <div className="container mx-auto  justify-between items-center flex">
         <Link href="/">
@@ -48,6 +44,7 @@ const Navbar = () => {
           />
         </Link>
         <MenuIcon
+          style={{ zIndex: "999" }}
           onClick={() => {
             OpenNav();
           }}

@@ -14,6 +14,8 @@ const Products = () => {
           order={d.order}
           color_code={d.color_code}
           illustration={d.illustration}
+          antxt={d.antxt}
+          animg={d.animg}
         />
       ))}
     </div>
