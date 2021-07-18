@@ -1,0 +1,167 @@
+.small-ball {
+  position: absolute;
+  top: 5rem;
+  z-index: 999;
+  left: 2rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(255, 230, 0)
+  );
+  animation: move-around 20s linear 0.3s infinite alternate-reverse both;
+}
+@keyframes move-around {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translate3d(20px, 20px, 0px);
+  }
+  40% {
+    transform: translate3d(50px, 30px, 0px);
+  }
+  60% {
+    transform: translate3d(100px, 30px, 0px);
+  }
+  80% {
+    transform: translate3d(200px, 30px, 0px);
+  }
+  100% {
+    transform: translate3d(100px, 100px, 0px);
+  }
+}
+.large-ball {
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #ffc107);
+  animation: lb-move-around 20s linear 0.3s infinite alternate-reverse both;
+}
+@keyframes lb-move-around {
+  0% {
+    transform: translate3d(10rem, 10rem, 0px);
+  }
+  100% {
+    transform: translate3d(20rem, 30rem, 0px);
+  }
+}
+.big-ball {
+  position: absolute;
+  top: 25rem;
+  left: 20rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #ffc107);
+  /* animation: move-around 10s linear 0.3s infinite alternate-reverse both; */
+}
+
+.star {
+  animation: rotate-star 15s linear 0.5s infinite normal both;
+}
+@keyframes rotate-star {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.string {
+  position: absolute;
+  background-color: rgba(167, 45, 45, 0);
+  width: 30px;
+  height: 25rem;
+  left: 5%;
+  top: 15%;
+  animation: rotate-string 20s linear 0.5s infinite normal both;
+}
+@keyframes rotate-string {
+  from {
+    top: 10%;
+    transform: rotate(-20deg);
+  }
+  to {
+    top: 15%;
+    transform: rotate(200deg);
+  }
+}
+
+.string::after {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(0, 47, 255)
+  );
+  position: absolute;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+/*for 
+animation in dolphin pen */
+.dolphin {
+  position: absolute;
+  transition: transform 2s;
+  z-index: 100;
+  animation: bounce1 1s alternate-reverse 0.5s linear infinite both;
+}
+@keyframes bounce1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+[data-aos="new-animation"] {
+  transform: matrix3d(1, 1, 0, 0, 0, 2, 1, 0, -4, 0, 1, 0, 0, 1, 1, 1);
+  transition-property: transform, opacity;
+  transition-duration: 2s;
+  opacity: 0;
+}
+
+[data-aos="new-animation"].aos-animate {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  opacity: 1;
+}
+
+[data-aos="tilt-ball"] {
+  transform: rotate(0deg);
+}
+[data-aos="tilt-ball"].aos-animate {
+  transform: rotate(75deg);
+  transition-property: transform;
+  transition-duration: 2s;
+}
+[data-aos="carrier-card"] {
+  transform: scale(0);
+  opacity: 0;
+}
+[data-aos="carrier-card"].aos-animate {
+  transition-property: transform;
+  transition-duration: 1s;
+  transform: scale(1);
+  opacity: 1;
+}
+[data-aos="text"] {
+  transform: scale(0);
+}
+[data-aos="text"].aos-animate {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+}

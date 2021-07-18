@@ -9,6 +9,7 @@ import "../styles/skeleton.css";
 import "../styles/navigation.css";
 import "../styles/custom-text-slick.css";
 import "../styles/fonts.css";
+import "../styles/animation.css";
 import "aos/dist/aos.css";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 // Import Swiper styles
