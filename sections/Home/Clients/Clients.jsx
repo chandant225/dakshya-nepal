@@ -21,29 +21,32 @@ const Clients = () => {
   }, []);
   return (
     <div className="mt-10 flex flex-col">
-      <div
-        data-aos-duration="2000"
-        data-aos="tilt-ball"
-        className="relative self-center flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300-300 to-yellow-500"
-        style={{
-          backgroundImage:
-            "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
-        }}
-      >
+      <div className="relative self-center">
         <div
-          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
+          data-aos-duration="1000"
+          data-aos="tilt-ball"
+          className="relative  flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300-300 to-yellow-500"
           style={{
             backgroundImage:
               "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
           }}
-        />
-        <ShieldCheckIcon className="w-8 h-8 text-white" />
+        >
+          <div
+            className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
+            style={{
+              backgroundImage:
+                "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+            }}
+          />
+        </div>
+        <ShieldCheckIcon className="w-8 h-8 absolute top-6 left-6 text-white" />
       </div>
+
       <p className="text-center font-primary text-gray-800 text-lg font-medium pt-5">
         Clientele
       </p>
       <p
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos="text"
         className="text-center font-primary text-[32px] font-medium capitalize text-gray-900"
       >

@@ -1,7 +1,7 @@
 .small-ball {
   position: absolute;
   top: 5rem;
-  z-index: 999;
+  z-index: -1;
   left: 2rem;
   width: 15px;
   height: 15px;
@@ -37,7 +37,7 @@
   position: absolute;
   top: 15rem;
   left: 2rem;
-  z-index: 1;
+  z-index: -20;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -81,7 +81,7 @@
   width: 30px;
   height: 25rem;
   left: 5%;
-  top: 15%;
+  top: 12%;
   animation: rotate-string 20s linear 0.5s infinite normal both;
 }
 @keyframes rotate-string {
@@ -90,7 +90,7 @@
     transform: rotate(-20deg);
   }
   to {
-    top: 15%;
+    top: 10%;
     transform: rotate(200deg);
   }
 }
@@ -116,6 +116,8 @@ animation in dolphin pen */
   position: absolute;
   transition: transform 2s;
   z-index: 100;
+  margin-left: -20px;
+  top: -10px;
   animation: bounce1 1s alternate-reverse 0.5s linear infinite both;
 }
 @keyframes bounce1 {
@@ -128,14 +130,14 @@ animation in dolphin pen */
 }
 
 [data-aos="new-animation"] {
-  transform: matrix3d(1, 1, 0, 0, 0, 2, 1, 0, -4, 0, 1, 0, 0, 1, 1, 1);
+  transform: scale(0);
   transition-property: transform, opacity;
-  transition-duration: 2s;
+  transition-duration: 1s;
   opacity: 0;
 }
 
 [data-aos="new-animation"].aos-animate {
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform: scale(1);
   opacity: 1;
 }
 

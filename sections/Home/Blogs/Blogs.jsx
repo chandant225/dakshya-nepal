@@ -24,24 +24,27 @@ const Blogs = () => {
   const DisplayBlogs = BlogData.slice(0, itemToshow);
   return (
     <div className="mt-32 container mx-auto flex flex-col items-center">
-      <div
-        data-aos-duration="2000"
-        data-aos="tilt-ball"
-        className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
-        style={{
-          backgroundImage:
-            "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
-        }}
-      >
-        <RssIcon className="w-8 h-8 text-white" />
+      <div className="relative">
         <div
-          className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
+          data-aos-duration="1000"
+          data-aos="tilt-ball"
+          className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
           style={{
             backgroundImage:
               "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
           }}
-        />
+        >
+          <div
+            className="absolute w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full -top-4 -right-4"
+            style={{
+              backgroundImage:
+                "linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)",
+            }}
+          />
+        </div>
+        <RssIcon className="w-8 h-8 absolute top-6 left-6 text-white" />
       </div>
+
       <p className="text-lg font-semibold text-center mt-5 text-gray-700">
         Dakshya Blogs
       </p>
@@ -60,7 +63,7 @@ const Blogs = () => {
             <div className="grid lg:grid-cols-3 grid-cols-1 sm:px-2 lg:gap-12 gap-y-8 pt-8">
               {DisplayBlogs &&
                 DisplayBlogs.map((blog, index) => (
-                  <div data-aos-duration="2000" data-aos="zoom-in">
+                  <div data-aos-duration="1000" data-aos="zoom-in">
                     <BlogCard blog={blog} key={index} />
                   </div>
                 ))}

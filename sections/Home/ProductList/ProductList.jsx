@@ -41,7 +41,7 @@ const ProductList = () => {
             <>
               <div
                 data-aos-delay="50"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos="new-animation"
                 className=" flex justify-center  items-center w-40"
               >
@@ -49,7 +49,7 @@ const ProductList = () => {
               </div>
               <div
                 data-aos-delay="50"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos="zoom-in"
                 className="space-y-3 w-full lg:w-[564px]"
               >
@@ -77,7 +77,7 @@ const ProductList = () => {
       </div>
       <img
         style={{ zIndex: "-1" }}
-        className="absolute top-12 -ml-20"
+        className="absolute h-[25rem] top-12 -ml-20"
         src="/illustrations/Ellipse 60.svg"
         alt="ellipse.svg"
       />
