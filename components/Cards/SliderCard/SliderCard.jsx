@@ -19,7 +19,7 @@ const SliderCard = ({ image, title, description }) => {
           )}
         </div>
       </div>
-      <div className="bg-white mb-5 flex flex-col justify-center items-center h-[496px] shadow-none rounded-none md:shadow-2xl md:rounded-xl place-self-center">
+      <div className="bg-white mb-5 w-[384px] flex flex-col justify-center items-center h-[496px] shadow-none rounded-none md:shadow-2xl md:rounded-xl place-self-center">
         <div className="relative grid place-items-center">
           <img src={image.primary} alt="image" className="w-36 h-auto" />
           <div className="absolute w-56 h-56 rounded-full bg-blue-50 place-self-center top-0 z-[-1]" />

@@ -6,6 +6,7 @@ export const dummy = [
       "Dolphin Talking Pen is an interactive tool that matches words and images in our reading books. When readers use Dolphin Talking Pen, it touches the book then a preloaded audio file is activated and spoken by the speaker inside.",
     image: "/images/Products/dolphin/dolphin.png",
     id: 1,
+    animate: "slide-left",
   },
   {
     name: "Digital Content",
@@ -14,6 +15,7 @@ export const dummy = [
       "Suspendisse potenti. Aenean id leo posuere, lacinia libero quis, condimentum eros. Nam dictum facilisis diam, vel facilisis eros condimentum ut. Aliquam non lobortis sem. Suspendisse posuere elementum nisi vel pretium. In hac habitasse platea dictumst. Maecenas non commodo nisl, sit amet mollis est.",
     image: "/images/Products/dolphin/dolphin.png",
     id: 2,
+    animate: "slide-left",
   },
   {
     name: "Qbex Kid",
@@ -22,6 +24,7 @@ export const dummy = [
       "Suspendisse potenti. Aenean id leo posuere, lacinia libero quis, condimentum eros. Nam dictum facilisis diam, vel facilisis eros condimentum ut. Aliquam non lobortis sem. Suspendisse posuere elementum nisi vel pretium. In hac habitasse platea dictumst. Maecenas non commodo nisl, sit amet mollis est.",
     image: "/images/Products/dolphin/dolphin.png",
     id: 3,
+    animate: "slide-left",
   },
   {
     name: "Qbex",
@@ -30,6 +33,7 @@ export const dummy = [
       "Suspendisse potenti. Aenean id leo posuere, lacinia libero quis, condimentum eros. Nam dictum facilisis diam, vel facilisis eros condimentum ut. Aliquam non lobortis sem. Suspendisse posuere elementum nisi vel pretium. In hac habitasse platea dictumst. Maecenas non commodo nisl, sit amet mollis est.",
     image: "/images/Products/dolphin/dolphin.png",
     id: 4,
+    animate: "slide-left",
   },
   {
     name: "CMS",
@@ -38,5 +42,6 @@ export const dummy = [
       "Suspendisse potenti. Aenean id leo posuere, lacinia libero quis, condimentum eros. Nam dictum facilisis diam, vel facilisis eros condimentum ut. Aliquam non lobortis sem. Suspendisse posuere elementum nisi vel pretium. In hac habitasse platea dictumst. Maecenas non commodo nisl, sit amet mollis est.",
     image: "/images/Products/dolphin/dolphin.png",
     id: 5,
+    animate: "slide-left",
   },
 ];
