@@ -13,7 +13,7 @@ const CtaBox = () => {
     {
       name: "Join As Consultant",
       link: "/careers",
-    }
+    },
   ];
   return (
     <div className="container mx-auto mt-2">

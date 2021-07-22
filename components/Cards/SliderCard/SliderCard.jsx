@@ -1,7 +1,6 @@
 import React from "react";
 
 const SliderCard = ({ image, title, description }) => {
-  console.log(image, "images");
   return (
     <div
       className="md:grid h-full md:h-[90vh] w-full"

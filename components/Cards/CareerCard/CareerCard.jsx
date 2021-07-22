@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { PrimaryButton, SecondaryButton } from "../../Buttons";
+import ApplyConsultant from "../../Careers/JoinUs/ApplyConsultant";
 
 const CareerCard = ({ description, links, image }) => {
+  const [apply, setApply] = useState(false);
+
   return (
     <div className="flex flex-col items-center md:items-start md:flex-row space-x-5 bg-white rounded-md shadow-lg hover:shadow-primary transition-all ease-in-out duration-300">
       <div className="bg-[#FEF6E0] w-[300px]">
@@ -22,13 +25,19 @@ const CareerCard = ({ description, links, image }) => {
           {links.map((link, index) => (
             <>
               {link.active ? (
-                <PrimaryButton text={link.name} link={link.url} key={index} />
+                <PrimaryButton text={link.name} link={link.link} key={index} />
               ) : (
-                <SecondaryButton text={link.name} link={link.url} key={index} />
+                <SecondaryButton
+                  text={link.name}
+                  // link={link.link}
+                  key={index}
+                  onClick={() => setApply(true)}
+                />
               )}
             </>
           ))}
         </div>
+        {apply && <ApplyConsultant setApply={setApply} />}
       </div>
     </div>
   );
