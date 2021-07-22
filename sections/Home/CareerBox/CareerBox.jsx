@@ -17,10 +17,6 @@ const CareerBox = () => {
       name: "Join As Consultant",
       link: "/careers",
     },
-    {
-      name: "Join As Online Tutor",
-      link: "/careers",
-    },
   ];
   useEffect(() => {
     Aos.init();
