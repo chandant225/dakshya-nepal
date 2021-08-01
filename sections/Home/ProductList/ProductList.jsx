@@ -42,7 +42,7 @@ const ProductList = () => {
             <>
               <div
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="500"
                 data-aos="new-animation"
                 className=" flex justify-center  items-center w-40"
               >
@@ -50,7 +50,7 @@ const ProductList = () => {
               </div>
               <div
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="500"
                 data-aos="zoom-in"
                 className="space-y-3 w-full lg:w-[564px]"
               >
@@ -60,12 +60,12 @@ const ProductList = () => {
                 <p className="text-[32px] font-primary font-semibold text-gray-900">
                   {d.heading}
                 </p>
-                <p className="text-base font-primary text-gray-600">
+                <p className="text-base max-h-[68px] font-primary text-gray-600">
                   {d.description}
                 </p>
                 <div
                   data-aos-delay="50"
-                  data-aos-duration="1000"
+                  data-aos-duration="500"
                   data-aos="flip-down"
                   data-aos-offset="80"
                 >
