@@ -26,7 +26,8 @@ const ProductInfoCard = ({
   return (
     <div className="block lg:grid lg:grid-cols-2 gap-8">
       <div
-        data-aos-duration="300"
+        data-aos-duration="200"
+        data-aos-offset="0"
         data-aos={animg}
         className={`${
           order === 0 ? "order-0" : "order-1"
@@ -37,7 +38,8 @@ const ProductInfoCard = ({
       <div className="flex flex-col product__infoCard pt-10 md:pt-0 items-center md:items-start">
         <div className="relative">
           <div
-            data-aos-duration="300"
+            data-aos-duration="400"
+            data-aos-offset="5"
             data-aos="tilt-ball"
             className={`flex items-center shadow-lg justify-center w-20 h-20 rounded-tr-full rounded-tl-full relative ${
               order === 0 ? `rounded-br-full` : `rounded-br-full`
@@ -68,7 +70,9 @@ const ProductInfoCard = ({
           )}
         </div>
 
-        <div data-aos-duration="300" data-aos={antxt}>
+        <div 
+        data-aos-duration="200" data-aos-offset="5" data-aos={antxt}
+        >
           <p
             className={`text-lg font-primary font-medium text-${color_code}-500 mt-3`}
           >
