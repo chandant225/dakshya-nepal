@@ -10,10 +10,10 @@ const VerticalText = () => {
           <TextSlider TextList={TextList} />
           <div
             className=" h-[10%] md:h-[10%] w-full absolute top-0"
-            style={{
-              background:
-                "linear-gradient(180deg,#FFFFFF 13%,rgba(254,250,237,0) 87%)",
-            }}
+            // style={{
+            //   background:
+            //     "linear-gradient(180deg,#FFFFFF 13%,rgba(254,250,237,0) 87%)",
+            // }}
           ></div>
           <div
             className=" h-[60%] md:h-[100%] w-full absolute bottom-0"
