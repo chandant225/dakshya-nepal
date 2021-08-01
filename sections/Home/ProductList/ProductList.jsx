@@ -60,7 +60,7 @@ const ProductList = () => {
                 <p className="text-[32px] font-primary font-semibold text-gray-900">
                   {d.heading}
                 </p>
-                <p className="text-base max-h-[68px] font-primary text-gray-600">
+                <p className="text-base max-h-[96px] font-primary text-gray-600">
                   {d.description}
                 </p>
                 <div

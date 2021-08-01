@@ -1,6 +1,6 @@
 export const data = [
   {
-    name: "Talking Pen",
+    name: "Smart Speak",
     description:
       "Unique education tool that recites  written text on the pages.",
     images: {
@@ -8,38 +8,38 @@ export const data = [
       secondary: "/images/Products/dolphin/dolphin_book.png",
     },
   },
-  {
-    name: "Qbex",
-    description:
-      "Unique education tool that recites  written text on the pages.",
-    images: {
-      primary: "/images/Products/qbex/qbex.png",
-      secondary: "/images/Products/qbex/rating.png",
-      third: "/images/Products/qbex/play_store.png",
-      forth: "/images/Products/qbex/qbex_online.png",
-      fifth: "/images/Products/qbex/mokup_laptop.png",
-    },
-  },
-  {
-    name: "CMS",
-    description: "Giving identity to the digital world.",
-    images: {
-      primary: "/images/Products/qbex/qbex.png",
-      secondary: "/images/Products/qbex/rating.png",
-      third: "/images/Products/qbex/play_store.png",
-      forth: "/images/Products/qbex/qbex_online.png",
-      fifth: "/images/Products/qbex/mokup_laptop.png",
-    },
-  },
-  {
-    name: "Digital Content",
-    description: "Experiencing knowledge from the senses.",
-    images: {
-      primary: "/images/Products/qbex/qbex.png",
-      secondary: "/images/Products/qbex/rating.png",
-      third: "/images/Products/qbex/play_store.png",
-      forth: "/images/Products/qbex/qbex_online.png",
-      fifth: "/images/Products/qbex/mokup_laptop.png",
-    },
-  },
+  // {
+  //   name: "Qbex",
+  //   description:
+  //     "Unique education tool that recites  written text on the pages.",
+  //   images: {
+  //     primary: "/images/Products/qbex/qbex.png",
+  //     secondary: "/images/Products/qbex/rating.png",
+  //     third: "/images/Products/qbex/play_store.png",
+  //     forth: "/images/Products/qbex/qbex_online.png",
+  //     fifth: "/images/Products/qbex/mokup_laptop.png",
+  //   },
+  // },
+  // {
+  //   name: "CMS",
+  //   description: "Giving identity to the digital world.",
+  //   images: {
+  //     primary: "/images/Products/qbex/qbex.png",
+  //     secondary: "/images/Products/qbex/rating.png",
+  //     third: "/images/Products/qbex/play_store.png",
+  //     forth: "/images/Products/qbex/qbex_online.png",
+  //     fifth: "/images/Products/qbex/mokup_laptop.png",
+  //   },
+  // },
+  // {
+  //   name: "Digital Content",
+  //   description: "Experiencing knowledge from the senses.",
+  //   images: {
+  //     primary: "/images/Products/qbex/qbex.png",
+  //     secondary: "/images/Products/qbex/rating.png",
+  //     third: "/images/Products/qbex/play_store.png",
+  //     forth: "/images/Products/qbex/qbex_online.png",
+  //     fifth: "/images/Products/qbex/mokup_laptop.png",
+  //   },
+  // },
 ];
