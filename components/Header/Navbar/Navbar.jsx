@@ -5,12 +5,14 @@ import Link from "next/link";
 import { PrimaryButton, SecondaryButton } from "../../Buttons";
 import styled from "styled-components";
 import { ArrowNarrowLeftIcon, MenuIcon, XIcon } from "@heroicons/react/solid";
+import ApplyBook from "../../ApplyBook/ApplyBook";
 // local
 import dakshyaLogo from "../../../public/icons/dakshya_logo.svg";
 
 const Navbar = () => {
   const router = useRouter();
   const [navActive, setNavActive] = useState(null);
+  const [applyBook, setApplyBook] = useState(false);
 
   const navBackground = () => {
     window.scrollY >= 75 ? setNavActive(true) : setNavActive(false);
@@ -82,7 +84,11 @@ const Navbar = () => {
           <button className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
             क
           </button>
-          <PrimaryButton text="Contact Us" link="/contact" />
+            <PrimaryButton 
+              onClick={() => setApplyBook(true)} 
+              text="Book Now" 
+            />
+            {applyBook && <ApplyBook setApplyBook={setApplyBook} />}
         </ul>
       </div>
       <div id="my_Sidebar" className="Sidebar">
