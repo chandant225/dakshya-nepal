@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { ProductNav, PrimaryButton } from "..";
-import { dummy } from "../../sections/Home/ProductList/dummy";
+import { dummy } from "./dummy";
 import AOS from "aos";
 
-const FormDetails = () => {
-  const [activekey, setActiveKey] = useState(1);
-  const [activeProduct, setActiveProduct] = useState(
-    dummy.filter((d) => d.id === activekey).map((filterData) => filterData)
-  );
-  useEffect(() => {
-    const currActiveProduct = dummy
-      .filter((d) => d.id === activekey)
-      .map((filteredData) => filteredData);
-    return () => {
-      setActiveProduct(currActiveProduct);
-    };
-  }, [activekey, activeProduct]);
+const FormDetails = ({ activekey }) => {
+  // const [currActiveProduct, setActiveProduct] = useState([]);
+  // useEffect(() => {
+  //   const currActiveProduct = dummy
+  //     .filter((d) => d.id === activekey)
+  //     .map((filteredData) => filteredData);
+  //   return () => {
+  //     setActiveProduct(currActiveProduct);
+  //   };
+  // }, [activekey, currActiveProduct]);
+  const currActiveProduct = dummy.filter((d) => d.id === activekey);
   useEffect(() => {
     AOS.init();
   });
@@ -31,16 +29,11 @@ const FormDetails = () => {
       </div>
       <div className="">
         <div className="flex justify-center items-center flex-col">
-          <ProductNav
-            items={dummy}
-            activekey={activekey}
-            setActiveKey={setActiveKey}
-          />
           <div
             className="pt-4 flex flex-col md:flex-row w-full mt-6"
             style={{}}
           >
-            {activeProduct.map((d, index) => (
+            {currActiveProduct.map((d, index) => (
               <>
                 <div
                   data-aos-delay="50"
