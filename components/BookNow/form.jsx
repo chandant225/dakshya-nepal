@@ -4,13 +4,13 @@ import { PrimaryButton } from "..";
 import Notification from "../Notification/Notification";
 import axios from "axios";
 
-const Form = () => {
+const Form = ({activekey, setActiveKey, dummy}) => {
   const url =
     "/api/forms/submit/guidanceCounseling?token=account-8fcffe3170295d0872f210c4799ee1";
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-
+  const [activeId, setActiveId] = useState(activekey);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,6 +28,8 @@ const Form = () => {
     occupation,
     grade,
   } = formData;
+
+  console.log(activekey, product, grade);
 
   const onChangeHandler = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -102,12 +104,17 @@ const Form = () => {
               value={product}
               onChange={(e) => onChangeHandler(e)}
               placeholder='Select Your Product Type'
-              className="py-3 px-3 border-2 rounded-xl focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 rounded-xl bg-white focus:border-blue-400 my-2 w-full focus:outline-none"
             >
-                <option value=""></option>
-              <option value="Talking Pen">Talking Pen</option>
-              <option value="Relationship">Relationship</option>
-              <option value="others">others</option>
+              <option value=""></option>
+              {
+                dummy.map((data, index) => {
+                  setActiveKey(data.id)
+                  return(
+                    <option value={data.name}>{data.name}</option>
+                  )
+                })
+              }
             </select>
 
             <div className="grid grid-cols-2  gap-4 lg:gap-6">
@@ -117,7 +124,7 @@ const Form = () => {
                     id="grade"
                     value={grade}
                     onChange={(e) => onChangeHandler(e)}
-                    className="py-3 px-3 border-2 rounded-xl focus:border-blue-400 my-2 w-full focus:outline-none"
+                    className="py-3 px-3 border-2 rounded-xl bg-white focus:border-blue-400 my-2 w-full focus:outline-none"
                     >
                     <option value=""></option>
                     <option value="1">1</option>
