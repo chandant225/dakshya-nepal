@@ -8,7 +8,7 @@ const BookNow = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 shadow-md mt-10 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 shadow mt-10 ">
           <div className="" style={{ backgroundColor: "#f9ea8f" }}>
             <FormDetails activekey={activekey} />
           </div>
