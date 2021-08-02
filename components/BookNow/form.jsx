@@ -21,7 +21,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
 
   const { name, email, phone, product, occupation, grade } = formData;
 
-  console.log(activekey, product, grade);
+  // console.log(activekey, product, grade);
 
   const onChangeHandler = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
