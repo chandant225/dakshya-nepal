@@ -35,9 +35,8 @@ const ApplyJob = ({ setApply, title }) => {
     };
 
     const finalUrl =
-      process.env.NEXT_PUBLIC_PROXY_URL +
-      process.env.NEXT_PUBLIC_CORE_API_URL +
-      url;
+      // process.env.NEXT_PUBLIC_PROXY_URL +
+      process.env.NEXT_PUBLIC_CORE_API_URL + url;
 
     try {
       const res = await axios.post(finalUrl, data);
