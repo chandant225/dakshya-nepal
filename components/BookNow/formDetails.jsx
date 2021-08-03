@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ProductNav, PrimaryButton } from "..";
 import { dummy } from "./dummy";
 import SelectedDetails from "./SelectedDetails";
+import DefaultDetail from "./DefaultDetail";
 import AOS from "aos";
 
 const FormDetails = ({ activekey }) => {
@@ -11,9 +12,9 @@ const FormDetails = ({ activekey }) => {
   });
   console.log(activekey)
   return (
-    <div className="p-4">
-      { activekey==0 ? (
-        <h1>Helllllllllllllll</h1>
+    <div className="">
+      { activekey === 0 ? (
+        <DefaultDetail />
       ) : (
         <SelectedDetails currActiveProduct={currActiveProduct} />
       ) }

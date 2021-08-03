@@ -8,11 +8,11 @@ const BookNow = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 shadow mt-10 ">
-          <div className="" style={{ backgroundColor: "#f9ea8f" }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 shadow-booking mt-10 ">
+          <div className="bg-gradient-to-br from-yellow-200 to-primary">
             <FormDetails activekey={activekey} />
           </div>
-          <div className="">
+          <div className="bg-gray-50">
             <Form
               activekey={activekey}
               dummy={dummy}

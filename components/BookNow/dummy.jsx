@@ -1,20 +1,11 @@
 export const dummy = [
   {
-    name: "initial data 1",
+    name: "Select Product",
     heading: "initial",
     description:
       "Dolphin Talking Pen is an interactive tool that matches words and images in our reading books. When readers use Dolphin Talking Pen, it touches the book then a preloaded audio file is activated and spoken by the speaker inside.",
     image: "/images/cms.png",
     id: 0,
-    animate: "slide-left",
-  },
-  {
-    name: "Initial 2",
-    heading: "Making Learning more fun with Talking Pen",
-    description:
-      "Dolphin Talking Pen is an interactive tool that matches words and images in our reading books. When readers use Dolphin Talking Pen, it touches the book then a preloaded audio file is activated and spoken by the speaker inside.",
-    image: "/images/Products/dolphin/dolphin.png",
-    id: 1,
     animate: "slide-left",
   },
   {

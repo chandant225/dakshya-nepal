@@ -57,7 +57,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
 
   return (
     <div>
-      <div className="flex py-[50px] px-[25px]">
+      <div className="flex py-[50px] px-[25px] bg-gray-50">
         <div data-aos="zoom-in" className=" w-full p-4">
           <form onSubmit={(e) => onSubmit(e)}>
             <label htmlFor="name" className="font-primary text-gray-500">
@@ -68,7 +68,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               id="name"
               value={name}
               onChange={(e) => onChangeHandler(e)}
-              className="py-3 px-3 border-2 rounded-xl focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 rounded-full focus:border-blue-400 my-2 w-full focus:outline-none"
               placeholder="Enter your name"
               required
             />
@@ -81,7 +81,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               id="email"
               value={email}
               onChange={(e) => onChangeHandler(e)}
-              className="py-3 px-3 border-2 rounded-xl focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 rounded-full focus:border-blue-400 my-2 w-full focus:outline-none"
               placeholder="Enter your email address "
               required
             />
@@ -93,7 +93,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               id="phone"
               value={phone}
               onChange={(e) => onChangeHandler(e)}
-              className="py-3 px-3 border-2 rounded-xl focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 rounded-full focus:border-blue-400 my-2 w-full focus:outline-none"
               placeholder="Enter your phone number"
               required
             />
@@ -105,7 +105,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               value={product}
               onChange={(e) => onChangeHandler(e)}
               placeholder="Select Your Product Type"
-              className="py-3 px-3 border-2 rounded-xl bg-white focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 rounded-full bg-white text-gray-500 focus:border-blue-400 my-2 w-full focus:outline-none"
             >
               {dummy.map((data, index) => {
                 return (
@@ -125,7 +125,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
                   id="grade"
                   value={grade}
                   onChange={(e) => onChangeHandler(e)}
-                  className="py-3 px-3 border-2 rounded-xl bg-white focus:border-blue-400 my-2 w-full focus:outline-none"
+                  className="py-3 px-3 border-2 rounded-full bg-white text-gray-500 focus:border-blue-400 my-2 w-full focus:outline-none"
                 >
                   <option value=""></option>
                   <option value="1">1</option>
@@ -148,7 +148,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
                   id="occupation"
                   value={occupation}
                   onChange={(e) => onChangeHandler(e)}
-                  className="py-3 px-3 border-2 rounded-xl focus:border-blue-400 my-2 w-full focus:outline-none"
+                  className="py-3 px-3 border-2 rounded-full focus:border-blue-400 my-2 w-full focus:outline-none"
                 ></input>
               </div>
             </div>

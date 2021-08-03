@@ -1,6 +1,7 @@
 import React from "react";
+import {dummy} from './dummy';
 
-const DefaultDetail = ({ activekey }) => {
+const DefaultDetail = () => {
   return (
     <div className="bg-gradient-to-br from-yellow-200 to-primary px-12 py-12">
       <div className="grid grid-cols-2">
@@ -19,80 +20,25 @@ const DefaultDetail = ({ activekey }) => {
           alt=""
         />
       </div>
-      <p className="font-primary text-xl font-medium text-center">
+      <p className="font-primary text-2xl font-medium text-center">
         Get to know some of our products
       </p>
-      <div className="flex pt-8 justify-center items-center flex-wrap space-x-6 space-y-4">
+      <div className="grid grid-cols-2 pt-8 justify-center items-center gap-2">
         {/* actual card */}
-        <div className="flex flex-col space-y-2 items-center justify-center">
+        {
+          dummy.filter(d => d.id !== 0).map((data, index) => (
+            <div className="flex flex-col space-y-2 items-center justify-center" key={index}>
           <img
-            src="/images/cms.svg"
+            src={data.image}
             alt="image"
-            className="max-h-[54px] max-w-[68px]"
+            className="max-h-[148px] max-w-[148px]"
           />
           <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary">
-            Digital Content
-          </p>
-          <p className="font-primary text-center font-light text-[11px] leading-[14px] max-w-[112px]">
-            Making Learning more interactive with Digital Content
+            {data.name}
           </p>
         </div>
-        {/* actual card */}
-        <div className="flex flex-col space-y-2 items-center justify-center">
-          <img
-            src="/images/cms.svg"
-            alt="image"
-            className="max-h-[54px] max-w-[68px]"
-          />
-          <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary">
-            Digital Content
-          </p>
-          <p className="font-primary text-center font-light text-[11px] leading-[14px] max-w-[112px]">
-            Making Learning more interactive with Digital Content
-          </p>
-        </div>
-        {/* actual card */}
-        <div className="flex flex-col space-y-2 items-center justify-center">
-          <img
-            src="/images/cms.svg"
-            alt="image"
-            className="max-h-[54px] max-w-[68px]"
-          />
-          <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary">
-            Digital Content
-          </p>
-          <p className="font-primary text-center font-light text-[11px] leading-[14px] max-w-[112px]">
-            Making Learning more interactive with Digital Content
-          </p>
-        </div>
-        {/* actual card */}
-        <div className="flex flex-col space-y-2 items-center justify-center">
-          <img
-            src="/images/cms.svg"
-            alt="image"
-            className="max-h-[54px] max-w-[68px]"
-          />
-          <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary">
-            Digital Content
-          </p>
-          <p className="font-primary text-center font-light text-[11px] leading-[14px] max-w-[112px]">
-            Making Learning more interactive with Digital Content
-          </p>
-        </div>
-        {/* actual card */}
-        <div className="flex flex-col space-y-2 items-center justify-center">
-          <img
-            src="/images/cms.svg"
-            alt="image"
-            className="max-h-[54px] max-w-[68px]"
-          />
-          <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary">
-            Digital Content
-          </p>
-          <p className="font-primary text-center font-light text-[11px] leading-[14px] max-w-[112px]">
-            Making Learning more interactive with Digital Content
-          </p>
-        </div>
+          ))
+        }
       </div>
     </div>
   );
