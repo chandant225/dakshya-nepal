@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { ProductNav, PrimaryButton } from "..";
 import { dummy } from "./dummy";
 import SelectedDetails from "./SelectedDetails";
 import DefaultDetail from "./DefaultDetail";
@@ -23,7 +22,3 @@ const FormDetails = ({ activekey }) => {
 };
 
 export default FormDetails;
-
-
-
-{/* <SelectedDetails currActiveProduct={currActiveProduct} /> */}

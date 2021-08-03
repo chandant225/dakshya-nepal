@@ -33,13 +33,21 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
     };
 
     const finalUrl =
-      process.env.NEXT_PUBLIC_PROXY_URL +
       process.env.NEXT_PUBLIC_CORE_API_URL +
       url;
 
     try {
       const res = await axios.post(finalUrl, data);
       console.log(res);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        product: "",
+        occupation: "",
+        grade: "",
+        message:""
+          })
       setSuccess(true);
     } catch (error) {
       console.log(error);
@@ -87,7 +95,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               Phone Number
             </label>
             <input
-              type="text"
+              type="number"
               id="phone"
               value={phone}
               onChange={(e) => onChangeHandler(e)}
@@ -161,8 +169,7 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               value={message}
               onChange={(e) => onChangeHandler(e)}
               className="py-3 px-4 border-2 rounded-full focus:border-blue-400 my-2 w-full focus:outline-none"
-              placeholder="Enter your email address "
-              required
+              placeholder="Enter your message "
             />
 
             <center className="mt-8">
@@ -171,14 +178,14 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
           </form>
           {success && (
             <Notification
-              message="Request Success!"
+              message="Booking Success!.  "
               setSuccess={setSuccess}
               setError={setError}
             />
           )}
           {error && (
             <Notification
-              message="Could not send message. Please try again!"
+              message="Could not book the product. Please try again!"
               error
               setSuccess={setSuccess}
               setError={setError}

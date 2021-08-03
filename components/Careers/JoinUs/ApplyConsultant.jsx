@@ -57,6 +57,18 @@ const ApplyConsultant = ({ setApply }) => {
     try {
       const res = await axios.post(finalUrl, data);
       console.log(res);
+      setFormData({
+        name: "",
+        gender: "",
+        email: "",
+        phone: "",
+        address: "",
+        qualification: "",
+        specialization: "",
+        training: "",
+        occupation: "",
+        whyAssociate: "",
+      })
       setSuccess(true);
     } catch (error) {
       console.log(error);
@@ -314,7 +326,7 @@ const ApplyConsultant = ({ setApply }) => {
 
                         {success && (
                           <Notification
-                            message="Request Success"
+                            message="Request Success!"
                             setSuccess={setSuccess}
                             setError={setError}
                           />

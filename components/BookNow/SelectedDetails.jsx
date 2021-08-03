@@ -3,20 +3,19 @@ import React from 'react'
 const SelectedDetails = ({currActiveProduct}) => {
     return (
     <div>
-      <div className="">
+      <div className="px-3">
         <div className="flex justify-center items-center flex-col">
           <div
             className="pt-4 flex flex-col md:flex-row w-full mt-6"
             style={{}}
           >
             {currActiveProduct.map((d, index) => (
-              <>
-              <div className="flex flex-col ">
+              <div className="flex flex-col " key={index}>
               <div className=" flex items-center justify-center p-3">
                     <img
                     src={d.image}
                     alt=""
-                    className="h-64"
+                    className="h-40 lg:h-64"
                     />
                 </div>
                 <div
@@ -28,12 +27,11 @@ const SelectedDetails = ({currActiveProduct}) => {
                   <p className="text-[32px] font-primary font-semibold text-gray-900">
                     {d.heading}
                   </p>
-                  <p className="text-base max-h-[96px] font-primary text-gray-600 mt-10">
+                  <p className="text-base lg:max-h-[96px] pb-2  font-primary text-gray-600 mt-10">
                     {d.description}
                   </p>
                 </div>
               </div>
-              </>
             ))}
           </div>
         </div>

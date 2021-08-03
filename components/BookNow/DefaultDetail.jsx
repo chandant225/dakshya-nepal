@@ -33,7 +33,7 @@ const DefaultDetail = () => {
             alt="image"
             className="max-h-[148px] max-w-[148px]"
           />
-          <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary">
+          <p className="text-blue-600 text-center capitalize font-medium text-sm font-primary ">
             {data.name}
           </p>
         </div>
