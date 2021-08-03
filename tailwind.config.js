@@ -11,6 +11,7 @@ module.exports = {
       boxShadow: {
         primary: "0px 8px 40px 2px rgba(85, 85, 85, 0.08)",
         secondary: "rgb(0 0 0 / 8%) 0px 1px 12px",
+        booking: "0px 3px 9px rgba(0, 0, 0, 0.25)"
       },
       container: {
         padding: {

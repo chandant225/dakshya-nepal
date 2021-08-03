@@ -57,14 +57,14 @@ const Testimonials = () => {
         </div>
         <Slider {...settings} className="py-3 px-0 md:px-3 relative">
           <TestimonialCard
-            name="John Doe"
-            description="Eu platea volutpat ornare aliquam quam quis auctor orci morbi imperdiet nisi pellentesque sit sed ultrices sem habitant sed in vulputate nulla odio id pharetra massa donec tincidunt ullamcorper ac felis massa porttitor..."
-            image="https://images.unsplash.com/photo-1624850667288-31fde0ec04bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+            name="Prabin Shrestha"
+            description="“The Qbex team exhibited professionalism throughout the software package development and implementation period. They communicated regularly and understood our requirements exceptionally well."
+            image="https://qbex.com.np/wp-content/uploads/2020/07/Chanakya-Mgmt@3x-120x120.png"
           />
           <TestimonialCard
-            name="John Doe"
-            description="Eu platea volutpat ornare aliquam quam quis auctor orci morbi imperdiet nisi pellentesque sit sed ultrices sem habitant sed in vulputate nulla odio id pharetra massa donec tincidunt ullamcorper ac felis massa porttitor..."
-            image="https://images.unsplash.com/photo-1624850667288-31fde0ec04bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+            name="Sundar Budathoki"
+            description="The Software makes the overall performance of the school run smoothly especially dealing with the finance related transactions with the help of regular support staff. "
+            image="https://qbex.com.np/wp-content/uploads/2020/07/nepal-police-Mgmt@3x-120x120.png"
           />
         </Slider>
       </div>

@@ -3,7 +3,7 @@ export const Team_Data = [
     Image: {
       path: "images/team/vishal.jpeg",
     },
-    Name: "Vishal Tatar",
+    Name: "Vishal Tater",
     Designation: "Chairman",
     LinkedIn: "https://www.linkedin.com/in/vishal-tater-634a3565/",
     Email: "mailto:vishal.tater@gmail.com",
