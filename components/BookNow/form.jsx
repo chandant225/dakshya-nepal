@@ -24,7 +24,6 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
 
   const onChangeHandler = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
-    setActiveKey(parseInt(e.target.selectedOptions[0].id));
   };
 
   const onSubmit = async (e) => {
@@ -103,6 +102,9 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
               id="product"
               value={product}
               onChange={(e) => onChangeHandler(e)}
+              onClick={(e) =>
+                setActiveKey(parseInt(e.target.selectedOptions[0].id))
+              }
               placeholder="Select Your Product Type"
               className="py-3 px-3 border-2 rounded-full bg-white text-gray-500 focus:border-blue-400 my-2 w-full focus:outline-none"
             >
