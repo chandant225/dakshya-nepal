@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Form = ({ activekey, setActiveKey, dummy }) => {
   const url =
-    "/api/forms/submit/guidanceCounseling?token=account-8fcffe3170295d0872f210c4799ee1";
+    "/api/forms/submit/bookNow?token=account-8fcffe3170295d0872f210c4799ee1";
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -17,11 +17,10 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
     product: "",
     occupation: "",
     grade: "",
+    message:""
   });
 
-  const { name, email, phone, product, occupation, grade } = formData;
-
-  // console.log(activekey, product, grade);
+  const { name, email, phone, product, occupation, grade, message } = formData;
 
   const onChangeHandler = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -152,6 +151,17 @@ const Form = ({ activekey, setActiveKey, dummy }) => {
                 ></input>
               </div>
             </div>
+            <label htmlFor="email" className="font-primary text-gray-500">
+              Email Address
+            </label>
+            <textarea
+              id="message"
+              value={message}
+              onChange={(e) => onChangeHandler(e)}
+              className="py-3 px-4 border-2 rounded-full focus:border-blue-400 my-2 w-full focus:outline-none"
+              placeholder="Enter your email address "
+              required
+            />
 
             <center className="mt-8">
               <PrimaryButton type="submit" text="Book Your Product" />
