@@ -4,6 +4,7 @@ import { PrimaryCard } from "../../components";
 import ProductsData from "./products.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Head from "next/head";
 
 export default function Products() {
   useEffect(() => {
@@ -13,6 +14,9 @@ export default function Products() {
   }, []);
   return (
     <>
+      <Head>
+        <title>products</title>
+      </Head>
       <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-[1.5rem] gap-[1.5rem] lg:mt-12 container mx-auto">
         {ProductsData.map((product) => (
           <PrimaryCard

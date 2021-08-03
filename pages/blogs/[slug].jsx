@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import dayjs from "dayjs";
 import htmr from "htmr";
 import styled from "styled-components";
-import {BlogDetailsSkeleton} from "../../components";
-import { NextSeo } from "next-seo";
+import { BlogDetailsSkeleton } from "../../components";
+
 import Head from "next/head";
 const paragraph = styled.p`
   padding: 10px 1px;
@@ -40,7 +40,7 @@ const Slug = () => {
   }, [slug]);
 
   const data = BlogData[0];
-  console.log(data);
+
   const GoBack = () => {
     router.push("/blogs");
   };
@@ -60,8 +60,27 @@ const Slug = () => {
                   rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
                 />
+                <title>{data.title}</title>
+                <meta name="description" content={data.excerpt} />
+                <link
+                  rel="cononical"
+                  href={`https://65fa29eb9309.ngrok.io/blogs/${slug}`}
+                />
+                <meta property="og:title" content={data.title} />
+                <meta property="og:description" content={data.excerpt} />
+                <meta
+                  property="og:url"
+                  content={`https://65fa29eb9309.ngrok.io/blogs/${slug}`}
+                />
+                <meta
+                  property="og:image"
+                  content={
+                    process.env.NEXT_PUBLIC_CORE_API_URL + data.coverImage.path
+                  }
+                />
+                <meta property="og:type" content="website" />
+                <link rel="icon" href="/favicon.ico" />
               </Head>
-              <NextSeo title={data.title} />
               <div className="flex flex-row lg:gap-2 gap-2 py-4">
                 <span
                   onClick={() => {

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import BenefitSection from "../components/About/BenefitSection/BenefitSection";
 import CtaBox from "../components/About/CtaBox/CtaBox";
@@ -8,6 +9,9 @@ import VerticalText from "../components/About/VerticalText/VerticalText";
 const About = () => {
   return (
     <div className="">
+      <Head>
+        <title>About</title>
+      </Head>
       <VerticalText />
       <FeatureAbout />
       <BenefitSection />
