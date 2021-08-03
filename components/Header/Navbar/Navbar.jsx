@@ -83,13 +83,7 @@ const Navbar = () => {
           <button className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
             क
           </button>
-          {/* <li
-            className={`font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300 ${
-              router.pathname.includes("/bookNow") && "text-yellow-500"
-            }`}
-          >
-            <Link href="/bookNow">Book Now</Link>
-          </li> */}
+          <PrimaryButton link="/bookNow" text="Book Now"/>
         </ul>
       </div>
       <div id="my_Sidebar" className="Sidebar">
