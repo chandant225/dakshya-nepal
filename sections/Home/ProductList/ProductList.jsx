@@ -69,7 +69,7 @@ const ProductList = () => {
                   data-aos="flip-down"
                   data-aos-offset="80"
                 >
-                  <PrimaryButton text="Learn More" link="/" />
+                  {/* <PrimaryButton text="Learn More" link="/" /> */}
                 </div>
               </div>
             </>
