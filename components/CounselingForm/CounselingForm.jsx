@@ -45,13 +45,23 @@ const CounselingForm = () => {
     };
 
     const finalUrl =
-      process.env.NEXT_PUBLIC_PROXY_URL +
+      // process.env.NEXT_PUBLIC_PROXY_URL +
       process.env.NEXT_PUBLIC_CORE_API_URL +
       url;
 
     try {
       const res = await axios.post(finalUrl, data);
       console.log(res);
+      setFormData({
+        guidanceAs: "",
+        name: "",
+        address: "",
+        phone: "",
+        school: "",
+        problems: "",
+        nature: "",
+        availableAs: "",
+      })
       setSuccess(true);
     } catch (error) {
       console.log(error);

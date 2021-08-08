@@ -10,7 +10,7 @@ const BenefitSection = () => {
   return (
     <div className="pt-[91px] container mx-auto  grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
       {benefits.map((data, index) => (
-        <div data-aos={data.animate} data-aos-duration="1000">
+        <div data-aos={data.animate} data-aos-duration="500">
           <Benefit
             title={data.title}
             benefits={data.benefits}

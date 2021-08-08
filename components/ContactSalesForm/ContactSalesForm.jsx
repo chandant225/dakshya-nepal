@@ -5,7 +5,7 @@ import Notification from "../Notification/Notification";
 import axios from "axios";
 
 const ContactSalesForm = () => {
-  const url = "/api/forms/submit/productContactForm";
+  const url = "/api/forms/submit/productContactForm?token=account-8fcffe3170295d0872f210c4799ee1";
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -31,7 +31,7 @@ const ContactSalesForm = () => {
     };
 
     const finalUrl =
-      process.env.NEXT_PUBLIC_PROXY_URL +
+      // process.env.NEXT_PUBLIC_PROXY_URL +
       process.env.NEXT_PUBLIC_CORE_API_URL +
       url;
 

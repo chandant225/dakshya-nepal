@@ -23,7 +23,7 @@ const Clients = () => {
     <div className="mt-10 flex flex-col">
       <div className="relative self-center">
         <div
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos="tilt-ball"
           className="relative  flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300-300 to-yellow-500"
           style={{

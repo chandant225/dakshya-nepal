@@ -16,7 +16,7 @@ const Features = () => {
         <div className="relative">
           <div
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos="tilt-ball"
             className="relative m-auto lg:m-0 flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
             style={{
@@ -35,7 +35,7 @@ const Features = () => {
           <CursorClickIcon className="w-8 h-8 absolute top-6 left-6  text-white" />
         </div>
 
-        <div data-aos-duration="1000" data-aos="fade-right">
+        <div data-aos-duration="500" data-aos="fade-right">
           <p className="font-primary font-medium text-lg text-gray-800">
             Smart School
           </p>
