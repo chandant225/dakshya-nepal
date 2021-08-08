@@ -15,7 +15,7 @@ const FeatureAbout = () => {
             <div
               data-aos={data.animate}
               data-aos-offset="10"
-              data-aos-duration="1000"
+              data-aos-duration="500"
             >
               <FeatureBlock
                 title={data.title}

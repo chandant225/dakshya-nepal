@@ -26,7 +26,7 @@ const Blogs = () => {
     <div className="mt-32 container mx-auto flex flex-col items-center">
       <div className="relative">
         <div
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos="tilt-ball"
           className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
           style={{
@@ -63,7 +63,7 @@ const Blogs = () => {
             <div className="grid lg:grid-cols-3 grid-cols-1 sm:px-2 lg:gap-12 gap-y-8 pt-8">
               {DisplayBlogs &&
                 DisplayBlogs.map((blog, index) => (
-                  <div data-aos-duration="1000" data-aos="zoom-in">
+                  <div data-aos-duration="500" data-aos="zoom-in">
                     <BlogCard blog={blog} key={index} />
                   </div>
                 ))}

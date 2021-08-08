@@ -14,7 +14,7 @@ const Join_Us = ({ data }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 border-solid border-gray-200 border-2 rounded-lg justify-center">
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           className="bg-yellow-50 col-span-1 flex flex-col items-center overflow-hidden md:items-start sm:w-full md:w-full lg:w-full pt-[24px]  "
         >
           <img

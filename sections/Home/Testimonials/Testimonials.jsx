@@ -10,7 +10,7 @@ const Testimonials = () => {
   const settings = {
     vertical: true,
     infinite: true,
-    speed: 300,
+    speed: 200,
     verticalSwiping: true,
     // autoplay: true,
     autoplaySpeed: 5000,
@@ -23,7 +23,7 @@ const Testimonials = () => {
     <div className="container mx-auto mt-24 flex flex-col justify-center items-center">
       <div className="relative">
         <div
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos="tilt-ball"
           className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-300 to-yellow-500"
           style={{
@@ -51,7 +51,7 @@ const Testimonials = () => {
       >
         Our Happy Customers
       </p>
-      <div data-aos-duration="1000" data-aos="slide-up" className="">
+      <div data-aos-duration="500" data-aos="slide-up" className="">
         <div className="absolute left-0 hidden lg:block">
           <img src="/illustrator/school_images.png" alt="" />
         </div>

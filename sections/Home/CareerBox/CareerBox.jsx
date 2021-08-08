@@ -25,7 +25,7 @@ const CareerBox = () => {
     <div className="container mx-auto mt-24 flex flex-col items-center justify-center">
       <div className="relative">
         <div
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos="tilt-ball"
           className="relative flex items-center shadow-lg justify-center w-20 h-20 rounded-full rounded-bl-full bg-gradient-to-tr from-pink-500 to-red-500"
           style={{
@@ -47,13 +47,13 @@ const CareerBox = () => {
         Career
       </p>
       <p
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos="text"
         className="text-center font-primary text-[32px] font-medium capitalize text-gray-900"
       >
         Intrested In Educating Nepal?
       </p>
-      <div data-aos-duration="1000" data-aos="zoom-in-up" className="pt-10">
+      <div data-aos-duration="500" data-aos="zoom-in-up" className="pt-10">
         <CareerCard
           description="If you are willing to digitize Nepal and become a part of the largest digital educator, join us in changing the education system for being recognized as the global leader in education."
           links={links}

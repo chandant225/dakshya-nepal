@@ -50,7 +50,7 @@ const CareerMail = () => {
       <div className="container mx-auto py-[58px] lg:py-[90px]">
         <p
           data-aos="fade-right"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           className="font-medium font-primary text-2xl md:text-3xl capitalize"
         >
           Can’t find what you do?

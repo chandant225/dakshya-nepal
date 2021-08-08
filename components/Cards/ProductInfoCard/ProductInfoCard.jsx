@@ -26,9 +26,9 @@ const ProductInfoCard = ({
   return (
     <div className="block lg:grid lg:grid-cols-2 gap-8">
       <div
-        data-aos-duration="200"
-        data-aos-offset="0"
-        data-aos={animg}
+        // data-aos-duration="200"
+        // data-aos-offset="0"
+        // data-aos={animg}
         className={`${
           order === 0 ? "order-0" : "order-1"
         } place-self-center mt-16`}
@@ -71,7 +71,7 @@ const ProductInfoCard = ({
         </div>
 
         <div 
-        data-aos-duration="200" data-aos-offset="5" data-aos={antxt}
+        // data-aos-duration="200" data-aos-offset="5" data-aos={antxt}
         >
           <p
             className={`text-lg font-primary font-medium text-${color_code}-500 mt-3`}
