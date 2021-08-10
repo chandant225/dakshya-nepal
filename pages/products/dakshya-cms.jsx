@@ -83,7 +83,7 @@ const DakshyaCms = () => {
             <div data-aos="flip-left" className="bg-[#FEF6E0] lg:w-[40%] p-6">
               <img
                 className="w-full object-contain"
-                src="/images/products/kalam/Power To You.svg"
+                src="/images/products/kalam/Power to You.svg"
                 alt="Power To You"
               />
             </div>
@@ -122,7 +122,7 @@ const DakshyaCms = () => {
             <div data-aos="flip-right" className="bg-[#FEF6E0] lg:w-[40%] p-6">
               <img
                 className="w-full object-contain"
-                src="/images/products/kalam/Empower Your Manpower.svg"
+                src="/images/products/kalam/Empower your Manpower.svg"
                 alt="Empower Your Manpower"
               />
             </div>

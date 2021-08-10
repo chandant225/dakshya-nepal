@@ -43,9 +43,9 @@ const Features = () => {
             Making Your Learning Process More interactive and fun
           </p>
           <p className="font-primary tracking-wider text-base text-gray-600 ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-            perferendis, minima maxime facilis delectus culpa, vel voluptatum
-            eius consequuntur sapiente accusamus
+          With over 50,000 modules mapped to school curriculum, the software is the best tool 
+          to ensure that students learn things at their own pace with interactive modules to get 
+          better understanding on the subject matter.
           </p>
         </div>
       </div>

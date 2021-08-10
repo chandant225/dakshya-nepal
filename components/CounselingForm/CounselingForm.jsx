@@ -134,7 +134,7 @@ const CounselingForm = () => {
               id="nature"
               value={nature}
               onChange={(e) => onChangeHandler(e)}
-              className="py-3 px-3 border-2 focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 bg-gray-100 focus:border-blue-400 my-2 w-full focus:outline-none"
             >
               <option className="text-gray-400">select one</option>
               <option value="Acedemics">Acedemics</option>
@@ -156,7 +156,7 @@ const CounselingForm = () => {
               id="availableAs"
               value={availableAs}
               onChange={(e) => onChangeHandler(e)}
-              className="py-3 px-3 border-2 focus:border-blue-400 my-2 w-full focus:outline-none"
+              className="py-3 px-3 border-2 bg-gray-100 focus:border-blue-400 my-2 w-full focus:outline-none"
             >
               <option className="text-gray-400">select one</option>
               <option value="Acedemics">Phone Call</option>
