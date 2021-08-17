@@ -5,6 +5,9 @@ import "../shared/css/extra.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RootLayout from "../layout";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import * as gtag from "../lib/gtag";
 import "../styles/skeleton.css";
 import "../styles/navigation.css";
 import "../styles/custom-text-slick.css";
@@ -19,6 +22,17 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <RootLayout>
       <Component {...pageProps} />
