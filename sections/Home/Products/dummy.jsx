@@ -3,7 +3,7 @@ export const data = [
     sub_heading: "Qbex",
     heading: "Entire school in your single gadget",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo massa, sollicitudin id volutpat ut, vehicula vel nunc. Donec condimentum est dui, et pharetra velit tristique vitae.",
+      "It is the most convenient AI(Artificial Intelligence) driven school management software with the highest level of customization program to every user .The  reliable tool that can be accessible from anywhere at any time .",
     list: [
       {
         name: "Reduces cost time and error",
