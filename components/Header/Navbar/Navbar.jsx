@@ -83,7 +83,13 @@ const Navbar = () => {
           <button className="font-medium text-base text-black font-secondary hover:text-gray-500 transition-all ease-in-out duration-300">
             क
           </button>
-          <PrimaryButton link="/bookNow" text="Book Now"/>
+          <a
+            href="https://shop.dakshyanepal.com"
+            target="_blank"
+            className="inline-block py-3 px-5 text-center bg-black text-white font-semibold text-base rounded-full shadow border-none hover:border-4 border-black hover:text-black hover:bg-gray-50 transition-all ease-linear duration-500"
+          >
+            Shop Now
+          </a>
         </ul>
       </div>
       <div id="my_Sidebar" className="Sidebar">
@@ -159,7 +165,13 @@ const Navbar = () => {
             }}
             className="font-medium py-2 text-2xl text-white font-secondary hover:text-gray-500 transition-all ease-in-out duration-300"
           >
-            <Link href="/contact">Contact Us</Link>
+            <a
+              href="https://shop.dakshyanepal.com"
+              target="_blank"
+              className="outline-none"
+            >
+              Shop Now
+            </a>
           </li>
         </ul>
       </div>
