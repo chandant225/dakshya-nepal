@@ -1,8 +1,13 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 const SliderCard = ({ image, title, description }) => {
+  const router = useRouter();
+
   return (
-    <div
+    <a
+      href="https://shop.dakshyanepal.com"
+      target="_blank"
       className="md:grid h-full md:h-[90vh] w-full"
       style={{ gridTemplateColumns: ".5fr 1fr .5fr" }}
     >
@@ -48,7 +53,7 @@ const SliderCard = ({ image, title, description }) => {
           )}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
