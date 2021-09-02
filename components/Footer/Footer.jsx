@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Image from "next/image";
 
 import logo_white from "../../public/icons/dakshya_logo_white.svg";
@@ -15,6 +16,7 @@ import {
 
 const Footer = () => {
   const date = new Date().getFullYear();
+  const router = useRouter();
   return (
     <div className="mt-24 bg-black">
       <div className="container mx-auto grid md:grid-cols-3 py-10">
@@ -47,8 +49,11 @@ const Footer = () => {
             </a>
           </div>
           <p className="font-normal text-sm text-white">#सक्षम-नेपाल</p>
-          <p className="font-primary font-normal text-sm text-white">
-            Legal. Paperwork. Advertisement
+          <p
+            className="font-primary font-normal text-sm text-white cursor-pointer hover:text-primary transition-all ease-in-out duration-300"
+            onClick={() => router.push("/privacypolicy")}
+          >
+            Privacy & Policy
           </p>
           <p className="font-primary font-normal text-sm text-white">
             All right reserved Dakshya Nepal {date}
@@ -73,11 +78,6 @@ const Footer = () => {
               <Link href="/guidance">
                 <p className="text-white font-primary font-normal text-sm cursor-pointer">
                   Guidance Counseling
-                </p>
-              </Link>
-              <Link href="/kalam_cms">
-                <p className="text-white font-primary font-normal text-sm cursor-pointer">
-                  Kalam CMS
                 </p>
               </Link>
               <Link href="/qbex">
