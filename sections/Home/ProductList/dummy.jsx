@@ -1,9 +1,9 @@
 export const dummy = [
   {
-    name: "Talking Pen",
-    heading: "Making Learning more fun with Talking Pen",
+    name: "SmartSpeak",
+    heading: "Making Learning more fun with SmartSpeak",
     description:
-      "Dolphin Talking Pen is an interactive tool that matches words and images in our reading books. When readers use Dolphin Talking Pen, it touches the book then a preloaded audio file is activated and spoken by the speaker inside.",
+      "SmartSpeak is an interactive tool that matches words and images in our reading books. When readers use SmartSpeak, it touches the book then a preloaded audio file is activated and spoken by the speaker inside.",
     image: "/images/Products/dolphin/dolphin.png",
     id: 1,
     animate: "slide-left",

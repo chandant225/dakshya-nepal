@@ -66,7 +66,7 @@ const Features = () => {
           <div data-aos-duration="2000" data-aos="flip-left">
             <FeatureCard
               title="Interactive Application"
-              description="application to interact with audiovisual information via gamification, visualization, and even VR/AR"
+              description="Application to interact with audiovisual information via gamification, visualization, and even VR/AR"
               image={interactiveImg}
             />
           </div>

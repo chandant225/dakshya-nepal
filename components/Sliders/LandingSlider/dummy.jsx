@@ -1,6 +1,6 @@
 export const data = [
   {
-    name: "Smart Speak",
+    name: "SmartSpeak",
     description:
       "Unique education tool that recites  written text on the pages.",
     images: {
