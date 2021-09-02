@@ -6,6 +6,7 @@ export const data = [
     images: {
       primary: "/images/Products/dolphin/dolphin.png",
       secondary: "/images/Products/dolphin/dolphin_book.png",
+      fifth: "/images/Products/dolphin/ukg.jpg",
     },
   },
   // {

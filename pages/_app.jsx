@@ -33,7 +33,9 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  return (
+  return router.pathname.includes("/admin") ? (
+    <h1>Hello</h1>
+  ) : (
     <RootLayout>
       <Component {...pageProps} />
       <MessengerCustomerChat
